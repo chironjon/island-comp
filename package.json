@@ -17,7 +17,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://chironjon.github.io/island-comp/",
   "eslintConfig": {
     "extends": "react-app"
   },
