@@ -1,0 +1,10 @@
+.labels {
+  list-style: none;
+  display: table;
+}
+
+input {
+  width: 90%;
+
+}
+
