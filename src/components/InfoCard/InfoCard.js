@@ -11,16 +11,16 @@ function capital_letter(str)
     return str.join(" ");
 }
 const InfoCard = (props) => (
-<div className="list">
+<div className="listItem">
 	<div className="card">
     <div className="img">
-      <img src={`https://acnhcdn.com/latest/MenuIcon/${props.critter["Icon Filename"]}.png?64x64`}/>
+      <img src={`https://acnhcdn.com/latest/MenuIcon/${props.critter["Icon Filename"]}.png`}/>
     </div>
     <div className="nameInfo">
       <p>Furn. Size: {props.critter["Size"]}</p>
-      <h1>{capital_letter(props.critter["Name"])}</h1>
+      <h2>{capital_letter(props.critter["Name"])}</h2>
       <p>{props.critter["Where/How"]}</p>
-      <p>SHADOW</p>
+      <p>{props.critter["Shadow"]}</p>
     </div>
     <div className="spawnInfo">
       <p>{props.critter["Spawn Rates"]}/{props.critter["Weather"]}</p>

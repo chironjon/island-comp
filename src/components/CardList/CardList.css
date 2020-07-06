@@ -1,7 +1,5 @@
 .card-list {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 20px;
+  display: inline-block;
 }
