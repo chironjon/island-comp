@@ -1,6 +1,6 @@
 {
   "name": "island-comp",
-  "homepage": "https://chironjon.github.io/island-comp/public/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
