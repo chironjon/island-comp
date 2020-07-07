@@ -26,38 +26,46 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
-  }
-.furnSize {
-  position: absolute;
-  bottom: 0px;
-  left: 5px;
+}
+.namePic {
+
+}
+.name {
+
+}
+.critterImg {
+  height: 90px;
+}
+.spawnInfo {
+  
+}
+.weatherMonths {
+
 }
 .hemispheres {
   display: flex;
   flex-direction: column;
   font-size: 10px;
-  }
-.nameInfo {
-
-  }
-.weatherMonths {
-
-}
-.spawnInfo {
-  
-  }
-.price {
-  display: flex;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    font-size: 18px;
-  }
-.priceImg {
-  width: 75px;
 }
 .monthLetter {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 7px;
+}
+.price {
+    display: flex;
+    position: absolute;
+    left: 5px;
+    bottom: -15px;
+    font-size: 18px;
+    z-index: -1;
+  }
+.priceImg {
+  height: 75px;
+
+}
+.furnSize {
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
 }
