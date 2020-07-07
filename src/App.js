@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import TimeInput from './components/TimeInput/TimeInput';
+import critters from './components/critters'
 import insects from './components/insects';
 import fish from './components/fish';
 import seaCreatures from './components/seaCreatures';
 import CardList from './components/CardList/CardList';
 
 import './App.css';
-
+const critterList = critters.map((item) => item);
 const insectList = insects.map((item) => item);
 const fishList = fish.map((item) => item);
 const seaCreatureList = seaCreatures.map((item) => item);
@@ -25,6 +26,7 @@ const initialState = {
   insectArr: insectList,
   fishArr: fishList,
   seaCritterArr: seaCreatureList,
+  critterArr: critterList,
   time: ''
 }
 class App extends Component {
@@ -44,7 +46,7 @@ class App extends Component {
   }
 
   onButtonPress = () => {
-    console.log(this.state)
+    console.log("poop")
     this.setState(initialState)
   }
   onInputChange = (event) => {

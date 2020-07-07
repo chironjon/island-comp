@@ -1,10 +1,4 @@
-div{
-/*display: block;
-  margin-left: auto;
-  margin-right: auto;*/
-  display: inline-block;
-  margin: 0 auto;
-}
+
 .listItem{
   display: inline-block;
   width: 300px;
@@ -14,15 +8,15 @@ div{
   background-color: #0AA17A;
   text-align: center;
   /* border-radius */
-  /*-webkit-border-radius: 5px;
+  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;*/
+  border-radius: 5px;
   /* box-shadow */
-  /*-webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
   -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
-  box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;*/
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
   cursor: pointer;
-  backface-visibility: hidden;
+/*  backface-visibility: hidden;*/
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
   font-size: 13px;
@@ -35,8 +29,9 @@ div{
   grid-template-columns: auto auto;
 
   }
-.img{
-
+.hemispheres{
+  display: inline-block;
+  font-size: 10px;
   }
 .nameInfo{
 
@@ -50,4 +45,9 @@ div{
   }
 .priceImg{
   width: 50px;
+}
+.monthLetter{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 5px;
 }
