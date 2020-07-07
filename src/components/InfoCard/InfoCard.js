@@ -16,17 +16,19 @@ const InfoCard = (props) => (
     <div className="img">
       <img src={`https://acnhcdn.com/latest/MenuIcon/${props.critter["Icon Filename"]}.png`}/>
     </div>
-    <div className="nameInfo">
-      <p>Furn. Size: {props.critter["Size"]}</p>
-      <h2>{capital_letter(props.critter["Name"])}</h2>
-      <p>{props.critter["Where/How"]}</p>
-      <p>{props.critter["Shadow"]}</p>
-            <p>TIME</p>
+    <div className="furnSize">
+    	<p>Furn. Size: {props.critter["Size"]}</p>
     </div>
-    <div className="spawnInfo">
-      <p>{props.critter["Spawn Rates"]}% spawn | {props.critter["Weather"]}</p>
+    <div className="nameInfo">
+      <h1>{capital_letter(props.critter["Name"])}</h1>
+      <p>{props.critter["Where/How"]}</p>
+      <p>{props.critter["Weather"]}</p>
+    </div>
+    <div className="weatherMonths">
       <div className="hemispheres">
-	      <p>NH</p>
+      	<div>
+	      	<p>North Hemisphere</p>
+	      </div>
 	      <div className="monthLetter">
 		      <p>J</p>
 		      <p>F</p>
@@ -57,6 +59,11 @@ const InfoCard = (props) => (
 		      <p>D</p>
 	      </div>*/}
       </div>
+    </div>
+    <div className="spawnInfo">
+      <p>{props.critter["Shadow"]} Shdw</p>
+    	<p>{props.critter["Spawn Rates"]} spwnRate</p>
+    	<p>TIME</p>
     </div>
     <div className="price">
       <img className="priceImg" src="https://acnhcdn.com/latest/MenuIcon/MoneyBag069.png"/>

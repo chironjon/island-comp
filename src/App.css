@@ -2,7 +2,11 @@
   text-align: center;
 }
 
-h2 {
+/*div {
+  border: 1px solid black;
+}*/
+
+h1 {
   font-family: 'Bigelow Rules';
   color: #0ccac4;
 }

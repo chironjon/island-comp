@@ -20,7 +20,7 @@ const TimeInput = ({ onChange, onPress, onMonthChange, onTimeChange }) => (
 					<label for="fish">Fish</label>
 					<input type="radio" id="seaCreatures" name="critters" value="seaCreatures"/>
 					<label for="seaCreatures">Sea Creatures</label>
-    		</form>
+    		</form>{/*fixing up button functions*/}
 	    	<input type="text"/>
 			</div>
 		)
