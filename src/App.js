@@ -27,6 +27,8 @@ const initialState = {
   fishArr: fishList,
   seaCritterArr: seaCreatureList,
   critterArr: critterList,
+  listType: '',
+  textInput: '',
   time: ''
 }
 class App extends Component {
@@ -60,9 +62,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <TimeInput onChange={this.onInputChange} onPress={this.onButtonPress} onMonthChange={this.onMonthChange} onTimeChange={this.onTimeChange}/>
-          <CardList time={this.state.time} critters={this.state.insectArr}/>
-          <CardList time={this.state.time} critters={this.state.fishArr}/>
-          <CardList time={this.state.time} critters={this.state.seaCritterArr}/>
+          <CardList time={this.state.time} critters={this.state.critterArr}/>
+          {/*<CardList time={this.state.time} critters={this.state.fishArr}/>
+          <CardList time={this.state.time} critters={this.state.seaCritterArr}/>*/}
         </div>
       </div>
     );

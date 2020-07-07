@@ -7,7 +7,7 @@ const CardList = (props) => (
 	<div className='card-list'>
 		{
       props.critters.map(critter => (
-      		<InfoCard key={critter["#"]} critter={critter}/>
+      		<InfoCard key={critter["Internal ID"]} critter={critter} type={critter["Type"]}/>
 
     		)
       )

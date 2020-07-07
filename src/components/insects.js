@@ -1,9 +1,7 @@
 const insects = [
-  {
+{
 		"#": 10,
 		"Name": "agrias butterfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 3000,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -33,6 +31,8 @@ const insects = [
 		"SH Oct": "8 AM – 5 PM",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Pink",
 		"Color 2": "Green",
@@ -40,12 +40,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMiirotateha",
 		"Furniture Filename": "FtrInsectMiirotateha",
 		"Internal ID": 620,
-		"Unique Entry ID": "aj95rMzdbSbvZy9A2"
+		"Unique Entry ID": "aj95rMzdbSbvZy9A2",
+		"Type": "insect"
 	},{
 		"#": 69,
 		"Name": "ant",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 80,
 		"Where/How": "On rotten turnips",
 		"Weather": "Any weather",
@@ -75,6 +74,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "White",
@@ -82,12 +83,11 @@ const insects = [
 		"Critterpedia Filename": "InsectAri",
 		"Furniture Filename": "FtrInsectAri",
 		"Internal ID": 588,
-		"Unique Entry ID": "QZpmczZu4hW2a4Rpv"
+		"Unique Entry ID": "QZpmczZu4hW2a4Rpv",
+		"Type": "insect"
 	},{
 		"#": 14,
 		"Name": "Atlas moth",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 3000,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -117,6 +117,8 @@ const insects = [
 		"SH Oct": "7 PM – 4 AM",
 		"SH Nov": "7 PM – 4 AM",
 		"SH Dec": "7 PM – 4 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Orange",
 		"Color 2": "Yellow",
@@ -124,12 +126,11 @@ const insects = [
 		"Critterpedia Filename": "InsectYonagunisan",
 		"Furniture Filename": "FtrInsectYonagunisan",
 		"Internal ID": 652,
-		"Unique Entry ID": "u2GhYQJXDCQKp7AQ8"
+		"Unique Entry ID": "u2GhYQJXDCQKp7AQ8",
+		"Type": "insect"
 	},{
 		"#": 68,
 		"Name": "bagworm",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 600,
 		"Where/How": "Shaking trees (hardwood or cedar only)",
 		"Weather": "Any weather",
@@ -159,6 +160,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Blue",
@@ -166,12 +169,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMinomushi",
 		"Furniture Filename": "FtrInsectMinomushi",
 		"Internal ID": 622,
-		"Unique Entry ID": "QvxgCm82JqHsDknY4"
+		"Unique Entry ID": "QvxgCm82JqHsDknY4",
+		"Type": "insect"
 	},{
 		"#": 34,
 		"Name": "banded dragonfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 4500,
 		"Where/How": "Flying near water",
 		"Weather": "Any except rain",
@@ -201,6 +203,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Yellow",
@@ -208,12 +212,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOniyanma",
 		"Furniture Filename": "FtrInsectOniyanma",
 		"Internal ID": 635,
-		"Unique Entry ID": "pCFep58D6QusMSvR7"
+		"Unique Entry ID": "pCFep58D6QusMSvR7",
+		"Type": "insect"
 	},{
 		"#": 21,
 		"Name": "bell cricket",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 430,
 		"Where/How": "On the ground",
 		"Weather": "Any except rain",
@@ -243,6 +246,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Beige",
@@ -250,12 +255,11 @@ const insects = [
 		"Critterpedia Filename": "InsectSuzumushi",
 		"Furniture Filename": "FtrInsectSuzumushi",
 		"Internal ID": 642,
-		"Unique Entry ID": "d5EQqbQsip82G2CZE"
+		"Unique Entry ID": "d5EQqbQsip82G2CZE",
+		"Type": "insect"
 	},{
 		"#": 49,
 		"Name": "blue weevil beetle",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 800,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -285,6 +289,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Pink",
@@ -292,12 +298,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHousekizoumushi",
 		"Furniture Filename": "FtrInsectHousekizoumushi",
 		"Internal ID": 3485,
-		"Unique Entry ID": "qocWy6r5RXjeThdYy"
+		"Unique Entry ID": "qocWy6r5RXjeThdYy",
+		"Type": "insect"
 	},{
 		"#": 26,
 		"Name": "brown cicada",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 250,
 		"Where/How": "On hardwood/cedar trees",
 		"Weather": "Any weather",
@@ -327,6 +332,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Green",
@@ -334,12 +341,11 @@ const insects = [
 		"Critterpedia Filename": "InsectAburazemi",
 		"Furniture Filename": "FtrInsectAburazemi",
 		"Internal ID": 582,
-		"Unique Entry ID": "gBLRZ2J2R2wwYWFCk"
+		"Unique Entry ID": "gBLRZ2J2R2wwYWFCk",
+		"Type": "insect"
 	},{
 		"#": 77,
 		"Name": "centipede",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 300,
 		"Where/How": "From hitting rocks",
 		"Weather": "Any weather",
@@ -369,6 +375,8 @@ const insects = [
 		"SH Oct": "4 PM – 11 PM",
 		"SH Nov": "4 PM – 11 PM",
 		"SH Dec": "4 PM – 11 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Orange",
@@ -376,12 +384,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMukade",
 		"Furniture Filename": "FtrInsectMukade",
 		"Internal ID": 628,
-		"Unique Entry ID": "ubStMQwHMJJcYje38"
+		"Unique Entry ID": "ubStMQwHMJJcYje38",
+		"Type": "insect"
 	},{
 		"#": 31,
 		"Name": "cicada shell",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 10,
 		"Where/How": "On hardwood/cedar trees",
 		"Weather": "Any weather",
@@ -411,6 +418,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Green",
@@ -418,12 +427,11 @@ const insects = [
 		"Critterpedia Filename": "InsectSeminonukegara",
 		"Furniture Filename": "FtrInsectSeminonukegara",
 		"Internal ID": 641,
-		"Unique Entry ID": "6s3MCahAroqpjGybW"
+		"Unique Entry ID": "6s3MCahAroqpjGybW",
+		"Type": "insect"
 	},{
 		"#": 47,
 		"Name": "citrus long-horned beetle",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 350,
 		"Where/How": "On tree stumps",
 		"Weather": "Any except rain",
@@ -453,6 +461,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Green",
@@ -460,12 +470,11 @@ const insects = [
 		"Critterpedia Filename": "InsectGomadarakamikiri",
 		"Furniture Filename": "FtrInsectGomadarakamikiri",
 		"Internal ID": 609,
-		"Unique Entry ID": "QR88MPLzYxSCHWZJb"
+		"Unique Entry ID": "QR88MPLzYxSCHWZJb",
+		"Type": "insect"
 	},{
 		"#": 5,
 		"Name": "common bluebottle",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 300,
 		"Where/How": "Flying",
 		"Weather": "Any except rain",
@@ -495,6 +504,8 @@ const insects = [
 		"SH Oct": "4 AM – 7 PM",
 		"SH Nov": "4 AM – 7 PM",
 		"SH Dec": "4 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Green",
@@ -502,12 +513,11 @@ const insects = [
 		"Critterpedia Filename": "InsectAosujiageha",
 		"Furniture Filename": "FtrInsectAosujiageha",
 		"Internal ID": 3477,
-		"Unique Entry ID": "vgkW2eovbpxNuGsFZ"
+		"Unique Entry ID": "vgkW2eovbpxNuGsFZ",
+		"Type": "insect"
 	},{
 		"#": 1,
 		"Name": "common butterfly",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 160,
 		"Where/How": "Flying",
 		"Weather": "Any except rain",
@@ -537,6 +547,8 @@ const insects = [
 		"SH Oct": "4 AM – 7 PM",
 		"SH Nov": "4 AM – 7 PM",
 		"SH Dec": "4 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "White",
 		"Color 2": "Green",
@@ -544,12 +556,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMonshirocho",
 		"Furniture Filename": "FtrInsectMonshirocho",
 		"Internal ID": 626,
-		"Unique Entry ID": "tRJxp5N9XbwAGQHZc"
+		"Unique Entry ID": "tRJxp5N9XbwAGQHZc",
+		"Type": "insect"
 	},{
 		"#": 20,
 		"Name": "cricket",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 130,
 		"Where/How": "On the ground",
 		"Weather": "Any except rain",
@@ -579,6 +590,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Beige",
@@ -586,12 +599,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKohrogi",
 		"Furniture Filename": "FtrInsectKohrogi",
 		"Internal ID": 617,
-		"Unique Entry ID": "Lr7eFJzJJZpWRWekm"
+		"Unique Entry ID": "Lr7eFJzJJZpWRWekm",
+		"Type": "insect"
 	},{
 		"#": 59,
 		"Name": "cyclommatus stag",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 8000,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -621,6 +633,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Black",
@@ -628,12 +642,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHosoakakuwagata",
 		"Furniture Filename": "FtrInsectHosoakakuwagata",
 		"Internal ID": 602,
-		"Unique Entry ID": "moBevd7J5hwpHeLcs"
+		"Unique Entry ID": "moBevd7J5hwpHeLcs",
+		"Type": "insect"
 	},{
 		"#": 35,
 		"Name": "damselfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 500,
 		"Where/How": "Flying near water",
 		"Weather": "Any except rain",
@@ -663,6 +676,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Blue",
@@ -670,12 +685,11 @@ const insects = [
 		"Critterpedia Filename": "InsectItotonbo",
 		"Furniture Filename": "FtrInsectItotonbo",
 		"Internal ID": 5339,
-		"Unique Entry ID": "pBmqsa7CyeKzyRjDT"
+		"Unique Entry ID": "pBmqsa7CyeKzyRjDT",
+		"Type": "insect"
 	},{
 		"#": 33,
 		"Name": "darner dragonfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 230,
 		"Where/How": "Flying near water",
 		"Weather": "Any except rain",
@@ -705,6 +719,8 @@ const insects = [
 		"SH Oct": "8 AM – 5 PM",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Green",
@@ -712,12 +728,11 @@ const insects = [
 		"Critterpedia Filename": "InsectGinyanma",
 		"Furniture Filename": "FtrInsectGinyanma",
 		"Internal ID": 595,
-		"Unique Entry ID": "723NiWMh4iY9RJtAM"
+		"Unique Entry ID": "723NiWMh4iY9RJtAM",
+		"Type": "insect"
 	},{
 		"#": 39,
 		"Name": "diving beetle",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 800,
 		"Where/How": "On rivers/ponds",
 		"Weather": "Any weather",
@@ -747,6 +762,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "8 AM – 7 PM",
 		"SH Dec": "8 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Blue",
@@ -754,12 +771,11 @@ const insects = [
 		"Critterpedia Filename": "InsectGengorou",
 		"Furniture Filename": "FtrInsectGengorou",
 		"Internal ID": 594,
-		"Unique Entry ID": "CBjt7itnPqEtNznrX"
+		"Unique Entry ID": "CBjt7itnPqEtNznrX",
+		"Type": "insect"
 	},{
 		"#": 53,
 		"Name": "drone beetle",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 200,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -789,6 +805,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Blue",
@@ -796,12 +814,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKanabun",
 		"Furniture Filename": "FtrInsectKanabun",
 		"Internal ID": 3480,
-		"Unique Entry ID": "uXmtRAQgY3g596tov"
+		"Unique Entry ID": "uXmtRAQgY3g596tov",
+		"Type": "insect"
 	},{
 		"#": 50,
 		"Name": "dung beetle",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 3000,
 		"Where/How": "Pushing snowballs",
 		"Weather": "Any weather",
@@ -831,6 +848,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Beige",
@@ -838,12 +857,11 @@ const insects = [
 		"Critterpedia Filename": "InsectFunkorogashi",
 		"Furniture Filename": "FtrInsectFunkorogashi",
 		"Internal ID": 604,
-		"Unique Entry ID": "p9RhE8wLWpHtcoq5G"
+		"Unique Entry ID": "p9RhE8wLWpHtcoq5G",
+		"Type": "insect"
 	},{
 		"#": 51,
 		"Name": "earth-boring dung beetle",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 300,
 		"Where/How": "On the ground",
 		"Weather": "Any weather",
@@ -873,6 +891,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Purple",
 		"Color 2": "Orange",
@@ -880,12 +900,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOhsenchikogane",
 		"Furniture Filename": "FtrInsectSenchikogane",
 		"Internal ID": 614,
-		"Unique Entry ID": "k2fqxdYnTF8BpHB7u"
+		"Unique Entry ID": "k2fqxdYnTF8BpHB7u",
+		"Type": "insect"
 	},{
 		"#": 9,
 		"Name": "emperor butterfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 4000,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -915,6 +934,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "5 PM – 8 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Blue",
 		"Color 2": "Orange",
@@ -922,12 +943,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMorufuocho",
 		"Furniture Filename": "FtrInsectMorufuocho",
 		"Internal ID": 627,
-		"Unique Entry ID": "Lwkf7oQ3mcWYm6eEY"
+		"Unique Entry ID": "Lwkf7oQ3mcWYm6eEY",
+		"Type": "insect"
 	},{
 		"#": 30,
 		"Name": "evening cicada",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 550,
 		"Where/How": "On hardwood/cedar trees",
 		"Weather": "Any weather",
@@ -957,6 +977,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Orange",
@@ -964,12 +986,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHigurashi",
 		"Furniture Filename": "FtrInsectHigurashi",
 		"Internal ID": 601,
-		"Unique Entry ID": "kzX4apD9C3Nq8khzR"
+		"Unique Entry ID": "kzX4apD9C3Nq8khzR",
+		"Type": "insect"
 	},{
 		"#": 36,
 		"Name": "firefly",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 300,
 		"Where/How": "Flying near water",
 		"Weather": "Any except rain",
@@ -999,6 +1020,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "7 PM – 4 AM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Blue",
@@ -1006,12 +1029,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHotaru",
 		"Furniture Filename": "FtrInsectHotaru",
 		"Internal ID": 603,
-		"Unique Entry ID": "PgiwPqykwafyz5EL6"
+		"Unique Entry ID": "PgiwPqykwafyz5EL6",
+		"Type": "insect"
 	},{
 		"#": 74,
 		"Name": "flea",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 70,
 		"Where/How": "On villagers",
 		"Weather": "Any weather",
@@ -1041,6 +1063,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "White",
@@ -1048,12 +1072,11 @@ const insects = [
 		"Critterpedia Filename": "InsectNomi",
 		"Furniture Filename": "FtrInsectNomi",
 		"Internal ID": 633,
-		"Unique Entry ID": "QzDywoJEAJDcjGfEF"
+		"Unique Entry ID": "QzDywoJEAJDcjGfEF",
+		"Type": "insect"
 	},{
 		"#": 72,
 		"Name": "fly",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 60,
 		"Where/How": "Flying near trash (boots, tires, cans) or rotten turnips",
 		"Weather": "Any weather",
@@ -1083,6 +1106,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "White",
@@ -1090,12 +1115,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHae",
 		"Furniture Filename": "FtrInsectHae",
 		"Internal ID": 597,
-		"Unique Entry ID": "xdBmuMgXJ6jGxpabK"
+		"Unique Entry ID": "xdBmuMgXJ6jGxpabK",
+		"Type": "insect"
 	},{
 		"#": 28,
 		"Name": "giant cicada",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 500,
 		"Where/How": "On hardwood/cedar trees",
 		"Weather": "Any weather",
@@ -1125,6 +1149,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Yellow",
@@ -1132,12 +1158,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKumazemi",
 		"Furniture Filename": "FtrInsectKumazemi",
 		"Internal ID": 618,
-		"Unique Entry ID": "nPm2r7idGshQW87MN"
+		"Unique Entry ID": "nPm2r7idGshQW87MN",
+		"Type": "insect"
 	},{
 		"#": 57,
 		"Name": "giant stag",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 10000,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -1167,6 +1192,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Black",
@@ -1174,12 +1201,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOhkuwagata",
 		"Furniture Filename": "FtrInsectOhkuwagata",
 		"Internal ID": 637,
-		"Unique Entry ID": "KhrTLzayFz23zz2kn"
+		"Unique Entry ID": "KhrTLzayFz23zz2kn",
+		"Type": "insect"
 	},{
 		"#": 40,
 		"Name": "giant water bug",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 2000,
 		"Where/How": "On rivers/ponds",
 		"Weather": "Any weather",
@@ -1209,6 +1235,8 @@ const insects = [
 		"SH Oct": "7 PM – 8 AM",
 		"SH Nov": "7 PM – 8 AM",
 		"SH Dec": "7 PM – 8 AM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Blue",
@@ -1216,12 +1244,11 @@ const insects = [
 		"Critterpedia Filename": "InsectTagame",
 		"Furniture Filename": "FtrInsectTagame",
 		"Internal ID": 5157,
-		"Unique Entry ID": "ZsDdBvqAjZMG8EQkZ"
+		"Unique Entry ID": "ZsDdBvqAjZMG8EQkZ",
+		"Type": "insect"
 	},{
 		"#": 61,
 		"Name": "giraffe stag",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 12000,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -1251,6 +1278,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Black",
@@ -1258,12 +1287,11 @@ const insects = [
 		"Critterpedia Filename": "InsectGirafanokogirikuwagata",
 		"Furniture Filename": "FtrInsectGirafanokogirikuwagata",
 		"Internal ID": 3482,
-		"Unique Entry ID": "PSChjzMhGwhnsHTs4"
+		"Unique Entry ID": "PSChjzMhGwhnsHTs4",
+		"Type": "insect"
 	},{
 		"#": 60,
 		"Name": "golden stag",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 12000,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -1293,6 +1321,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Yellow",
@@ -1300,12 +1330,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOugononikuwagata",
 		"Furniture Filename": "FtrInsectOugononikuwagata",
 		"Internal ID": 638,
-		"Unique Entry ID": "2C8cSphidFCBPxYEe"
+		"Unique Entry ID": "2C8cSphidFCBPxYEe",
+		"Type": "insect"
 	},{
 		"#": 54,
 		"Name": "goliath beetle",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 8000,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -1335,6 +1364,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "5 PM – 8 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Red",
 		"Color 2": "Black",
@@ -1342,12 +1373,11 @@ const insects = [
 		"Critterpedia Filename": "InsectGoraiasuohtsunohanamuguri",
 		"Furniture Filename": "FtrInsectGoraiasuohtsunohanamuguri",
 		"Internal ID": 596,
-		"Unique Entry ID": "wZQMZfhtRyPFAapmF"
+		"Unique Entry ID": "wZQMZfhtRyPFAapmF",
+		"Type": "insect"
 	},{
 		"#": 19,
 		"Name": "grasshopper",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 160,
 		"Where/How": "On the ground",
 		"Weather": "Any except rain",
@@ -1377,6 +1407,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Beige",
@@ -1384,12 +1416,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKirigirisu",
 		"Furniture Filename": "FtrInsectKirigirisu",
 		"Internal ID": 613,
-		"Unique Entry ID": "zkzSLJPkkcwXwShKc"
+		"Unique Entry ID": "zkzSLJPkkcwXwShKc",
+		"Type": "insect"
 	},{
 		"#": 7,
 		"Name": "great purple emperor",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 3000,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -1419,6 +1450,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "4 AM – 7 PM",
 		"SH Dec": "4 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Purple",
 		"Color 2": "Orange",
@@ -1426,12 +1459,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOhmurasaki",
 		"Furniture Filename": "FtrInsectOhmurasaki",
 		"Internal ID": 3479,
-		"Unique Entry ID": "ZSre7sheZoRqsJwHQ"
+		"Unique Entry ID": "ZSre7sheZoRqsJwHQ",
+		"Type": "insect"
 	},{
 		"#": 70,
 		"Name": "hermit crab",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 1000,
 		"Where/How": "Disguised on shoreline",
 		"Weather": "Any weather",
@@ -1461,6 +1493,8 @@ const insects = [
 		"SH Oct": "7 PM – 8 AM",
 		"SH Nov": "7 PM – 8 AM",
 		"SH Dec": "7 PM – 8 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Beige",
 		"Color 2": "Pink",
@@ -1468,12 +1502,11 @@ const insects = [
 		"Critterpedia Filename": "InsectYadokari",
 		"Furniture Filename": "FtrInsectYadokari",
 		"Internal ID": 651,
-		"Unique Entry ID": "TzbsfYgE4k2qo7fHN"
+		"Unique Entry ID": "TzbsfYgE4k2qo7fHN",
+		"Type": "insect"
 	},{
 		"#": 24,
 		"Name": "honeybee",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 200,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -1503,6 +1536,8 @@ const insects = [
 		"SH Oct": "8 AM – 5 PM",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Yellow",
 		"Color 2": "Blue",
@@ -1510,12 +1545,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMitsubachi",
 		"Furniture Filename": "FtrInsectMitsubachi",
 		"Internal ID": 623,
-		"Unique Entry ID": "yeWiAiqDRwinvumDm"
+		"Unique Entry ID": "yeWiAiqDRwinvumDm",
+		"Type": "insect"
 	},{
 		"#": 63,
 		"Name": "horned atlas",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 8000,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -1545,6 +1579,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Black",
@@ -1552,12 +1588,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKohkasasuohkabuto",
 		"Furniture Filename": "FtrInsectKohkasasuohkabuto",
 		"Internal ID": 615,
-		"Unique Entry ID": "S93y8gxrSHFNCFmwJ"
+		"Unique Entry ID": "S93y8gxrSHFNCFmwJ",
+		"Type": "insect"
 	},{
 		"#": 62,
 		"Name": "horned dynastid",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 1350,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -1587,6 +1622,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Black",
@@ -1594,12 +1631,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKabutomushi",
 		"Furniture Filename": "FtrInsectKabutomushi",
 		"Internal ID": 612,
-		"Unique Entry ID": "zaG8qsKLpbTjysx7D"
+		"Unique Entry ID": "zaG8qsKLpbTjysx7D",
+		"Type": "insect"
 	},{
 		"#": 64,
 		"Name": "horned elephant",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 8000,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -1629,6 +1665,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Beige",
 		"Color 2": "Black",
@@ -1636,12 +1674,11 @@ const insects = [
 		"Critterpedia Filename": "InsectZoukabuto",
 		"Furniture Filename": "FtrInsectZoukabuto",
 		"Internal ID": 653,
-		"Unique Entry ID": "M7SHXNEMf78nJD6fE"
+		"Unique Entry ID": "M7SHXNEMf78nJD6fE",
+		"Type": "insect"
 	},{
 		"#": 65,
 		"Name": "horned hercules",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 12000,
 		"Where/How": "On palm trees",
 		"Weather": "Any weather",
@@ -1671,6 +1708,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Yellow",
 		"Color 2": "Black",
@@ -1678,12 +1717,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHerakuresuohkabuto",
 		"Furniture Filename": "FtrInsectHerakuresuohkabuto",
 		"Internal ID": 600,
-		"Unique Entry ID": "TqhEomNEMDZ2wcTpk"
+		"Unique Entry ID": "TqhEomNEMDZ2wcTpk",
+		"Type": "insect"
 	},{
 		"#": 45,
 		"Name": "jewel beetle",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 2400,
 		"Where/How": "On tree stumps",
 		"Weather": "Any except rain",
@@ -1713,6 +1751,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Black",
@@ -1720,12 +1760,11 @@ const insects = [
 		"Critterpedia Filename": "InsectTamamushi",
 		"Furniture Filename": "FtrInsectTamamushi",
 		"Internal ID": 645,
-		"Unique Entry ID": "TYFowxRG4ydcvotkQ"
+		"Unique Entry ID": "TYFowxRG4ydcvotkQ",
+		"Type": "insect"
 	},{
 		"#": 43,
 		"Name": "ladybug",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 200,
 		"Where/How": "On flowers",
 		"Weather": "Any except rain",
@@ -1755,6 +1794,8 @@ const insects = [
 		"SH Oct": "8 AM – 5 PM",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Red",
 		"Color 2": "Green",
@@ -1762,12 +1803,11 @@ const insects = [
 		"Critterpedia Filename": "InsectTentoumushi",
 		"Furniture Filename": "FtrInsectTentoumushi",
 		"Internal ID": 647,
-		"Unique Entry ID": "pYSSbvXzkuFneRvQ7"
+		"Unique Entry ID": "pYSSbvXzkuFneRvQ7",
+		"Type": "insect"
 	},{
 		"#": 16,
 		"Name": "long locust",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 200,
 		"Where/How": "On the ground",
 		"Weather": "Any weather",
@@ -1797,6 +1837,8 @@ const insects = [
 		"SH Oct": "8 AM – 7 PM",
 		"SH Nov": "8 AM – 7 PM",
 		"SH Dec": "8 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Blue",
@@ -1804,12 +1846,11 @@ const insects = [
 		"Critterpedia Filename": "InsectShoryobatta",
 		"Furniture Filename": "FtrInsectShoryobatta",
 		"Internal ID": 644,
-		"Unique Entry ID": "Q57sgq4hQTNZAqWXj"
+		"Unique Entry ID": "Q57sgq4hQTNZAqWXj",
+		"Type": "insect"
 	},{
 		"#": 15,
 		"Name": "Madagascan sunset moth",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 2500,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -1839,6 +1880,8 @@ const insects = [
 		"SH Oct": "8 AM – 4 PM",
 		"SH Nov": "8 AM – 4 PM",
 		"SH Dec": "8 AM – 4 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Pink",
@@ -1846,12 +1889,11 @@ const insects = [
 		"Critterpedia Filename": "InsectNishikiohtsubamega",
 		"Furniture Filename": "FtrInsectNishikiohtsubamega",
 		"Internal ID": 3484,
-		"Unique Entry ID": "EFWMygLqnJinFoXSW"
+		"Unique Entry ID": "EFWMygLqnJinFoXSW",
+		"Type": "insect"
 	},{
 		"#": 42,
 		"Name": "man-faced stink bug",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 1000,
 		"Where/How": "On flowers",
 		"Weather": "Any except rain",
@@ -1881,6 +1923,8 @@ const insects = [
 		"SH Oct": "7 PM – 8 AM",
 		"SH Nov": "7 PM – 8 AM",
 		"SH Dec": "7 PM – 8 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Orange",
@@ -1888,12 +1932,11 @@ const insects = [
 		"Critterpedia Filename": "InsectJinmenkamemushi",
 		"Furniture Filename": "FtrInsectJinmenkamemushi",
 		"Internal ID": 3483,
-		"Unique Entry ID": "zvr84Jvf4s6K23XJ5"
+		"Unique Entry ID": "zvr84Jvf4s6K23XJ5",
+		"Type": "insect"
 	},{
 		"#": 22,
 		"Name": "mantis",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 430,
 		"Where/How": "On flowers",
 		"Weather": "Any except rain",
@@ -1923,6 +1966,8 @@ const insects = [
 		"SH Oct": "8 AM – 5 PM",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Green",
@@ -1930,12 +1975,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKamakiri",
 		"Furniture Filename": "FtrInsectKamakiri",
 		"Internal ID": 607,
-		"Unique Entry ID": "Qko2mfz7SaESpMcCv"
+		"Unique Entry ID": "Qko2mfz7SaESpMcCv",
+		"Type": "insect"
 	},{
 		"#": 17,
 		"Name": "migratory locust",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 600,
 		"Where/How": "On the ground",
 		"Weather": "Any weather",
@@ -1965,6 +2009,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Orange",
@@ -1972,12 +2018,11 @@ const insects = [
 		"Critterpedia Filename": "InsectTonosamabatta",
 		"Furniture Filename": "FtrInsectTonosamabatta",
 		"Internal ID": 648,
-		"Unique Entry ID": "dkGagcjd7aZwFEszw"
+		"Unique Entry ID": "dkGagcjd7aZwFEszw",
+		"Type": "insect"
 	},{
 		"#": 56,
 		"Name": "miyama stag",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 1000,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -2007,6 +2052,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Black",
@@ -2014,12 +2061,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMiyamakuwagata",
 		"Furniture Filename": "FtrInsectMiyamakuwagata",
 		"Internal ID": 624,
-		"Unique Entry ID": "qRGGm6MfuP4Aqdk3M"
+		"Unique Entry ID": "qRGGm6MfuP4Aqdk3M",
+		"Type": "insect"
 	},{
 		"#": 37,
 		"Name": "mole cricket",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 500,
 		"Where/How": "Underground (dig where noise is loudest)",
 		"Weather": "Any weather",
@@ -2049,6 +2095,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Yellow",
@@ -2056,12 +2104,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOkera",
 		"Furniture Filename": "FtrInsectOkera",
 		"Internal ID": 634,
-		"Unique Entry ID": "HMWPGeeKw9LP6ucSq"
+		"Unique Entry ID": "HMWPGeeKw9LP6ucSq",
+		"Type": "insect"
 	},{
 		"#": 8,
 		"Name": "monarch butterfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 140,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -2091,6 +2138,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Orange",
 		"Color 2": "Blue",
@@ -2098,12 +2147,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOhkabamadara",
 		"Furniture Filename": "FtrInsectOhkabamadara",
 		"Internal ID": 636,
-		"Unique Entry ID": "BJPKSZMZ2tkLXkWjL"
+		"Unique Entry ID": "BJPKSZMZ2tkLXkWjL",
+		"Type": "insect"
 	},{
 		"#": 73,
 		"Name": "mosquito",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 130,
 		"Where/How": "Flying",
 		"Weather": "Any except rain",
@@ -2133,6 +2181,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "5 PM – 4 AM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "White",
@@ -2140,12 +2190,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKa",
 		"Furniture Filename": "FtrInsectKa",
 		"Internal ID": 606,
-		"Unique Entry ID": "3mMZ74qpWWnoizJHh"
+		"Unique Entry ID": "3mMZ74qpWWnoizJHh",
+		"Type": "insect"
 	},{
 		"#": 13,
 		"Name": "moth",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 130,
 		"Where/How": "Flying near light sources",
 		"Weather": "Any except rain",
@@ -2175,6 +2224,8 @@ const insects = [
 		"SH Oct": "7 PM – 4 AM",
 		"SH Nov": "7 PM – 4 AM",
 		"SH Dec": "7 PM – 4 AM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Beige",
 		"Color 2": "Yellow",
@@ -2182,12 +2233,11 @@ const insects = [
 		"Critterpedia Filename": "InsectGa",
 		"Furniture Filename": "FtrInsectGa",
 		"Internal ID": 592,
-		"Unique Entry ID": "7Kd97rqbYBuzuCHgf"
+		"Unique Entry ID": "7Kd97rqbYBuzuCHgf",
+		"Type": "insect"
 	},{
 		"#": 23,
 		"Name": "orchid mantis",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 2400,
 		"Where/How": "On white flowers",
 		"Weather": "Any except rain",
@@ -2217,6 +2267,8 @@ const insects = [
 		"SH Oct": "8 AM – 5 PM",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "White",
 		"Color 2": "Pink",
@@ -2224,12 +2276,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHanakamakiri",
 		"Furniture Filename": "FtrInsectHanakamakiri",
 		"Internal ID": 598,
-		"Unique Entry ID": "9b4v6nMrrThHEtNbB"
+		"Unique Entry ID": "9b4v6nMrrThHEtNbB",
+		"Type": "insect"
 	},{
 		"#": 6,
 		"Name": "paper kite butterfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 1000,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -2259,6 +2310,8 @@ const insects = [
 		"SH Oct": "8 AM – 7 PM",
 		"SH Nov": "8 AM – 7 PM",
 		"SH Dec": "8 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "White",
 		"Color 2": "Yellow",
@@ -2266,12 +2319,11 @@ const insects = [
 		"Critterpedia Filename": "InsectOhgomamadara",
 		"Furniture Filename": "FtrInsectOhgomamadara",
 		"Internal ID": 3478,
-		"Unique Entry ID": "hzwridDJE99rPHLrZ"
+		"Unique Entry ID": "hzwridDJE99rPHLrZ",
+		"Type": "insect"
 	},{
 		"#": 4,
 		"Name": "peacock butterfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 2500,
 		"Where/How": "Flying near blue/purple/black flowers",
 		"Weather": "Any except rain",
@@ -2301,6 +2353,8 @@ const insects = [
 		"SH Oct": "4 AM – 7 PM",
 		"SH Nov": "4 AM – 7 PM",
 		"SH Dec": "4 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Blue",
@@ -2308,12 +2362,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKarasuageha",
 		"Furniture Filename": "FtrInsectKarasuageha",
 		"Internal ID": 610,
-		"Unique Entry ID": "rguKzmnRkGmBMKzyE"
+		"Unique Entry ID": "rguKzmnRkGmBMKzyE",
+		"Type": "insect"
 	},{
 		"#": 76,
 		"Name": "pill bug",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 250,
 		"Where/How": "From hitting rocks",
 		"Weather": "Any weather",
@@ -2343,6 +2396,8 @@ const insects = [
 		"SH Oct": "11 PM – 4 PM",
 		"SH Nov": "11 PM – 4 PM",
 		"SH Dec": "11 PM – 4 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Blue",
@@ -2350,12 +2405,11 @@ const insects = [
 		"Critterpedia Filename": "InsectDangomushi",
 		"Furniture Filename": "FtrInsectDangomushi",
 		"Internal ID": 590,
-		"Unique Entry ID": "SGHXhcTzaNJD2z926"
+		"Unique Entry ID": "SGHXhcTzaNJD2z926",
+		"Type": "insect"
 	},{
 		"#": 38,
 		"Name": "pondskater",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 130,
 		"Where/How": "On rivers/ponds",
 		"Weather": "Any weather",
@@ -2385,6 +2439,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "8 AM – 7 PM",
 		"SH Dec": "8 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Blue",
@@ -2392,12 +2448,11 @@ const insects = [
 		"Critterpedia Filename": "InsectAmenbo",
 		"Furniture Filename": "FtrInsectAmenbo",
 		"Internal ID": 587,
-		"Unique Entry ID": "eSBNwiuZforpxNYem"
+		"Unique Entry ID": "eSBNwiuZforpxNYem",
+		"Type": "insect"
 	},{
 		"#": 12,
 		"Name": "Queen Alexandra's birdwing",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 4000,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -2427,6 +2482,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "8 AM – 4 PM",
 		"SH Dec": "8 AM – 4 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Pink",
@@ -2434,12 +2491,11 @@ const insects = [
 		"Critterpedia Filename": "InsectArekisandoratoribaneageha",
 		"Furniture Filename": "FtrInsectArekisandoratoribaneageha",
 		"Internal ID": 586,
-		"Unique Entry ID": "PbNXeN9GZuJuow7jv"
+		"Unique Entry ID": "PbNXeN9GZuJuow7jv",
+		"Type": "insect"
 	},{
 		"#": 58,
 		"Name": "rainbow stag",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 6000,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -2469,6 +2525,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "7 PM – 8 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Black",
@@ -2476,12 +2534,11 @@ const insects = [
 		"Critterpedia Filename": "InsectNijiirokuwagata",
 		"Furniture Filename": "FtrInsectNijiirokuwagata",
 		"Internal ID": 631,
-		"Unique Entry ID": "Egfv6BDtFMeGZPmfh"
+		"Unique Entry ID": "Egfv6BDtFMeGZPmfh",
+		"Type": "insect"
 	},{
 		"#": 11,
 		"Name": "Rajah Brooke's birdwing",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 2500,
 		"Where/How": "Flying near flowers",
 		"Weather": "Any except rain",
@@ -2511,6 +2568,8 @@ const insects = [
 		"SH Oct": "8 AM – 5 PM",
 		"SH Nov": "8 AM – 5 PM",
 		"SH Dec": "8 AM – 5 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Pink",
@@ -2518,12 +2577,11 @@ const insects = [
 		"Critterpedia Filename": "InsectAkaeritoribaneageha",
 		"Furniture Filename": "FtrInsectAkaeritoribaneageha",
 		"Internal ID": 584,
-		"Unique Entry ID": "gLpHgXT4pPXP4XfWQ"
+		"Unique Entry ID": "gLpHgXT4pPXP4XfWQ",
+		"Type": "insect"
 	},{
 		"#": 32,
 		"Name": "red dragonfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 180,
 		"Where/How": "Flying near water",
 		"Weather": "Any except rain",
@@ -2553,6 +2611,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Red",
 		"Color 2": "Orange",
@@ -2560,12 +2620,11 @@ const insects = [
 		"Critterpedia Filename": "InsectAkiakane",
 		"Furniture Filename": "FtrInsectAkiakane",
 		"Internal ID": 585,
-		"Unique Entry ID": "PKSHvkPphXteXHKuG"
+		"Unique Entry ID": "PKSHvkPphXteXHKuG",
+		"Type": "insect"
 	},{
 		"#": 18,
 		"Name": "rice grasshopper",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 400,
 		"Where/How": "On the ground",
 		"Weather": "Any weather",
@@ -2595,6 +2654,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Yellow",
@@ -2602,12 +2663,11 @@ const insects = [
 		"Critterpedia Filename": "InsectInago",
 		"Furniture Filename": "FtrInsectInago",
 		"Internal ID": 605,
-		"Unique Entry ID": "ZxXDxrgPvXEHz24Ni"
+		"Unique Entry ID": "ZxXDxrgPvXEHz24Ni",
+		"Type": "insect"
 	},{
 		"#": 27,
 		"Name": "robust cicada",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 300,
 		"Where/How": "On hardwood/cedar trees",
 		"Weather": "Any weather",
@@ -2637,6 +2697,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Blue",
@@ -2644,12 +2706,11 @@ const insects = [
 		"Critterpedia Filename": "InsectMinminzemi",
 		"Furniture Filename": "FtrInsectMinminzemi",
 		"Internal ID": 621,
-		"Unique Entry ID": "cd5ymnRmRvT4n4yjB"
+		"Unique Entry ID": "cd5ymnRmRvT4n4yjB",
+		"Type": "insect"
 	},{
 		"#": 48,
 		"Name": "rosalia batesi beetle",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 3000,
 		"Where/How": "On tree stumps",
 		"Weather": "Any except rain",
@@ -2679,6 +2740,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Blue",
 		"Color 2": "Black",
@@ -2686,12 +2749,11 @@ const insects = [
 		"Critterpedia Filename": "InsectRuriboshikamikiri",
 		"Furniture Filename": "FtrInsectRuriboshikamikiri",
 		"Internal ID": 3487,
-		"Unique Entry ID": "MSTA9vdJmGoDDADrF"
+		"Unique Entry ID": "MSTA9vdJmGoDDADrF",
+		"Type": "insect"
 	},{
 		"#": 55,
 		"Name": "saw stag",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 2000,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -2721,6 +2783,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Black",
@@ -2728,12 +2792,11 @@ const insects = [
 		"Critterpedia Filename": "InsectNokogirikuwagata",
 		"Furniture Filename": "FtrInsectNokogirikuwagata",
 		"Internal ID": 632,
-		"Unique Entry ID": "YQq3iSiBcBAHTWxc2"
+		"Unique Entry ID": "YQq3iSiBcBAHTWxc2",
+		"Type": "insect"
 	},{
 		"#": 52,
 		"Name": "scarab beetle",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 10000,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -2763,6 +2826,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Beige",
@@ -2770,12 +2835,11 @@ const insects = [
 		"Critterpedia Filename": "InsectPurachinakogane",
 		"Furniture Filename": "FtrInsectPurachinakogane",
 		"Internal ID": 639,
-		"Unique Entry ID": "2HXdFD8s6BmYYMf4u"
+		"Unique Entry ID": "2HXdFD8s6BmYYMf4u",
+		"Type": "insect"
 	},{
 		"#": 80,
 		"Name": "scorpion",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 8000,
 		"Where/How": "On the ground",
 		"Weather": "Any weather",
@@ -2805,6 +2869,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "7 PM – 4 AM",
 		"SH Dec": "7 PM – 4 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Black",
@@ -2812,12 +2878,11 @@ const insects = [
 		"Critterpedia Filename": "InsectSasori",
 		"Furniture Filename": "FtrInsectSasori",
 		"Internal ID": 640,
-		"Unique Entry ID": "xMzHsHbjvvicZvYxg"
+		"Unique Entry ID": "xMzHsHbjvvicZvYxg",
+		"Type": "insect"
 	},{
 		"#": 75,
 		"Name": "snail",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 250,
 		"Where/How": "On rocks/bushes",
 		"Weather": "Rain only",
@@ -2847,6 +2912,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Beige",
 		"Color 2": "Green",
@@ -2854,12 +2921,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKatatsumuri",
 		"Furniture Filename": "FtrInsectKatatsumuri",
 		"Internal ID": 611,
-		"Unique Entry ID": "rDNLeQnmJQGxsHpmL"
+		"Unique Entry ID": "rDNLeQnmJQGxsHpmL",
+		"Type": "insect"
 	},{
 		"#": 78,
 		"Name": "spider",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 600,
 		"Where/How": "Shaking trees (hardwood or cedar only)",
 		"Weather": "Any weather",
@@ -2889,6 +2955,8 @@ const insects = [
 		"SH Oct": "7 PM – 8 AM",
 		"SH Nov": "7 PM – 8 AM",
 		"SH Dec": "7 PM – 8 AM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Yellow",
 		"Color 2": "Orange",
@@ -2896,12 +2964,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKumo",
 		"Furniture Filename": "FtrInsectKumo",
 		"Internal ID": 619,
-		"Unique Entry ID": "s2u8kDoMQx7GbAJTR"
+		"Unique Entry ID": "s2u8kDoMQx7GbAJTR",
+		"Type": "insect"
 	},{
 		"#": 41,
 		"Name": "stinkbug",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 120,
 		"Where/How": "On flowers",
 		"Weather": "Any except rain",
@@ -2931,6 +2998,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Yellow",
@@ -2938,12 +3007,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKamemushi",
 		"Furniture Filename": "FtrInsectKamemushi",
 		"Internal ID": 608,
-		"Unique Entry ID": "4u5GZ4z3CyaHhMgqj"
+		"Unique Entry ID": "4u5GZ4z3CyaHhMgqj",
+		"Type": "insect"
 	},{
 		"#": 79,
 		"Name": "tarantula",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 8000,
 		"Where/How": "On the ground",
 		"Weather": "Any weather",
@@ -2973,6 +3041,8 @@ const insects = [
 		"SH Oct": "7 PM – 4 AM",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Black",
@@ -2980,12 +3050,11 @@ const insects = [
 		"Critterpedia Filename": "InsectTaranchura",
 		"Furniture Filename": "FtrInsectTaranchura",
 		"Internal ID": 646,
-		"Unique Entry ID": "4mto3ZvrZYpJxbm4c"
+		"Unique Entry ID": "4mto3ZvrZYpJxbm4c",
+		"Type": "insect"
 	},{
 		"#": 44,
 		"Name": "tiger beetle",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 1500,
 		"Where/How": "On the ground",
 		"Weather": "Any except rain",
@@ -3015,6 +3084,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Yellow",
@@ -3022,12 +3093,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHanmyou",
 		"Furniture Filename": "FtrInsectHanmyou",
 		"Internal ID": 599,
-		"Unique Entry ID": "zzGvu3797KnMb4LCD"
+		"Unique Entry ID": "zzGvu3797KnMb4LCD",
+		"Type": "insect"
 	},{
 		"#": 3,
 		"Name": "tiger butterfly",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 240,
 		"Where/How": "Flying",
 		"Weather": "Any except rain",
@@ -3057,6 +3127,8 @@ const insects = [
 		"SH Oct": "4 AM – 7 PM",
 		"SH Nov": "4 AM – 7 PM",
 		"SH Dec": "4 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Yellow",
 		"Color 2": "Green",
@@ -3064,12 +3136,11 @@ const insects = [
 		"Critterpedia Filename": "InsectAgehacho",
 		"Furniture Filename": "FtrInsectAgehacho",
 		"Internal ID": 583,
-		"Unique Entry ID": "GcSpepwg536mYnNuu"
+		"Unique Entry ID": "GcSpepwg536mYnNuu",
+		"Type": "insect"
 	},{
 		"#": 46,
 		"Name": "violin beetle",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 450,
 		"Where/How": "On tree stumps",
 		"Weather": "Any except rain",
@@ -3099,6 +3170,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Black",
@@ -3106,12 +3179,11 @@ const insects = [
 		"Critterpedia Filename": "InsectBaiorinmushi",
 		"Furniture Filename": "FtrInsectBaiorinmushi",
 		"Internal ID": 650,
-		"Unique Entry ID": "poAcys5Mr35ELp5PS"
+		"Unique Entry ID": "poAcys5Mr35ELp5PS",
+		"Type": "insect"
 	},{
 		"#": 29,
 		"Name": "walker cicada",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 400,
 		"Where/How": "On hardwood/cedar trees",
 		"Weather": "Any weather",
@@ -3141,6 +3213,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Black",
 		"Color 2": "Pink",
@@ -3148,12 +3222,11 @@ const insects = [
 		"Critterpedia Filename": "InsectTsukutsukuhousi",
 		"Furniture Filename": "FtrInsectTsukutsukuhousi",
 		"Internal ID": 649,
-		"Unique Entry ID": "QdrL4K7seJHvd4ZZM"
+		"Unique Entry ID": "QdrL4K7seJHvd4ZZM",
+		"Type": "insect"
 	},{
 		"#": 67,
 		"Name": "walking leaf",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 600,
 		"Where/How": "Disguised under trees",
 		"Weather": "Any weather",
@@ -3183,6 +3256,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Green",
 		"Color 2": "Green",
@@ -3190,12 +3265,11 @@ const insects = [
 		"Critterpedia Filename": "InsectKonohamushi",
 		"Furniture Filename": "FtrInsectKonohamushi",
 		"Internal ID": 616,
-		"Unique Entry ID": "kuZaMcg2E7ZX56nio"
+		"Unique Entry ID": "kuZaMcg2E7ZX56nio",
+		"Type": "insect"
 	},{
 		"#": 66,
 		"Name": "walking stick",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 600,
 		"Where/How": "On trees (any kind)",
 		"Weather": "Any weather",
@@ -3225,6 +3299,8 @@ const insects = [
 		"SH Oct": "NA",
 		"SH Nov": "NA",
 		"SH Dec": "NA",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Brown",
 		"Color 2": "Yellow",
@@ -3232,12 +3308,11 @@ const insects = [
 		"Critterpedia Filename": "InsectNanafushi",
 		"Furniture Filename": "FtrInsectNanafushi",
 		"Internal ID": 630,
-		"Unique Entry ID": "WQjgrjYotbwH59vXG"
+		"Unique Entry ID": "WQjgrjYotbwH59vXG",
+		"Type": "insect"
 	},{
 		"#": 25,
 		"Name": "wasp",
-		"Size": "1x1",
-		"Surface": "Yes",
 		"Sell": 2500,
 		"Where/How": "Shaking trees",
 		"Weather": "Any weather",
@@ -3267,6 +3342,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "Yes",
 		"HHA Base Points": 64,
 		"Color 1": "Yellow",
 		"Color 2": "Orange",
@@ -3274,12 +3351,11 @@ const insects = [
 		"Critterpedia Filename": "InsectHachi",
 		"Furniture Filename": "FtrInsectHachi",
 		"Internal ID": 643,
-		"Unique Entry ID": "ZEfBHqM6pFEddBezw"
+		"Unique Entry ID": "ZEfBHqM6pFEddBezw",
+		"Type": "insect"
 	},{
 		"#": 71,
 		"Name": "wharf roach",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 200,
 		"Where/How": "On beach rocks",
 		"Weather": "Any weather",
@@ -3309,6 +3385,8 @@ const insects = [
 		"SH Oct": "All day",
 		"SH Nov": "All day",
 		"SH Dec": "All day",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Beige",
 		"Color 2": "Blue",
@@ -3316,12 +3394,11 @@ const insects = [
 		"Critterpedia Filename": "InsectFunamushi",
 		"Furniture Filename": "FtrInsectFunamushi",
 		"Internal ID": 591,
-		"Unique Entry ID": "2fp9ChfPuPdYefTK3"
+		"Unique Entry ID": "2fp9ChfPuPdYefTK3",
+		"Type": "insect"
 	},{
 		"#": 2,
 		"Name": "yellow butterfly",
-		"Size": "1x1",
-		"Surface": "No",
 		"Sell": 160,
 		"Where/How": "Flying",
 		"Weather": "Any except rain",
@@ -3351,6 +3428,8 @@ const insects = [
 		"SH Oct": "4 AM – 7 PM",
 		"SH Nov": "4 AM – 7 PM",
 		"SH Dec": "4 AM – 7 PM",
+		"Size": "1x1",
+		"Surface": "No",
 		"HHA Base Points": 64,
 		"Color 1": "Yellow",
 		"Color 2": "Blue",
@@ -3358,7 +3437,9 @@ const insects = [
 		"Critterpedia Filename": "InsectMonkicho",
 		"Furniture Filename": "FtrInsectMonkicho",
 		"Internal ID": 625,
-		"Unique Entry ID": "9d92MqgcnGao8wQjB"
-  }
+		"Unique Entry ID": "9d92MqgcnGao8wQjB",
+		"Type": "insect"
+	}
 ]
+
 export default insects;

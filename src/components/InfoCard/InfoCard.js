@@ -10,19 +10,19 @@ function capital_letter(str)
 
     return str.join(" ");
 }
-const InfoCard = (props) => (
+const InfoCard = ({ critter, type }) => (
 <div className="listItem">
 	<div className="card">
-	  <h1 className="name">{capital_letter(props.critter["Name"])}</h1>
+	  <h1 className="name">{capital_letter(critter["Name"])}</h1>
     <div className="namePic">
-      <img className="critterImg" src={`https://acnhcdn.com/latest/MenuIcon/${props.critter["Icon Filename"]}.png`}/>
+      <img className="critterImg" src={`https://acnhcdn.com/latest/MenuIcon/${critter["Icon Filename"]}.png`}/>
     </div>
     <div className="spawnInfo">
 			<p>TIME</p>
-      <p>{props.critter["Where/How"]}</p>
-      <p>{props.critter["Weather"]}</p>
-    	<p>{props.critter["Shadow"]}</p>
-			<p>{props.critter["Spawn Rates"]} spwnRate</p>
+      <p>{critter["Where/How"]}</p>
+      <p>{critter["Weather"]}</p>
+    	<p>{critter["Shadow"]}</p>
+			<p>{critter["Spawn Rates"]} spwnRate</p>
     </div>
 		<div className="weatherMonths">
       <div className="hemispheres">
@@ -30,27 +30,27 @@ const InfoCard = (props) => (
 	      	<p>North Hemisphere</p>
 	      </div>
 	      <div className="monthLetter">
-		      <p>J</p>
-		      <p>F</p>
-		      <p>M</p>
-		      <p>A</p>
-		      <p>M</p>
-		      <p>J</p>
-		      <p>J</p>
-		      <p>A</p>
-		      <p>S</p>
-		      <p>O</p>
-		      <p>N</p>
-		      <p>D</p>
+		      <p className={`${critter["NH Jan"] != "NA" ? "avail" : ""}`}>J</p>
+		      <p className={`${critter["NH Feb"] != "NA" ? "avail" : ""}`}>F</p>
+		      <p className={`${critter["NH Mar"] != "NA" ? "avail" : ""}`}>M</p>
+		      <p className={`${critter["NH Apr"] != "NA" ? "avail" : ""}`}>A</p>
+		      <p className={`${critter["NH May"] != "NA" ? "avail" : ""}`}>M</p>
+		      <p className={`${critter["NH Jun"] != "NA" ? "avail" : ""}`}>J</p>
+		      <p className={`${critter["NH Jul"] != "NA" ? "avail" : ""}`}>J</p>
+		      <p className={`${critter["NH Aug"] != "NA" ? "avail" : ""}`}>A</p>
+		      <p className={`${critter["NH Sep"] != "NA" ? "avail" : ""}`}>S</p>
+		      <p className={`${critter["NH Oct"] != "NA" ? "avail" : ""}`}>O</p>
+		      <p className={`${critter["NH Nov"] != "NA" ? "avail" : ""}`}>N</p>
+		      <p className={`${critter["NH Dec"] != "NA" ? "avail" : ""}`}>D</p>
 	      </div>
       </div>
     </div>    
     <div className="price">
-      <h1>{props.critter["Sell"]}x</h1>
+      <h1>{critter["Sell"]}x</h1>
       <img className="priceImg" src="https://acnhcdn.com/latest/MenuIcon/MoneyBag069.png"/>
     </div>
     <div className="furnSize">
-    	<p>Furn. Size: {props.critter["Size"]}</p>
+    	<p>Furn. Size: {critter["Size"]}</p>
     </div>
   </div>
 </div>

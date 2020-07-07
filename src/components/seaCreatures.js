@@ -43,7 +43,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2835,
-		"Unique Entry ID": "LnurTYKDSPtsiQr62"
+		"Unique Entry ID": "LnurTYKDSPtsiQr62",
+		"Type": "sea"
 	},{
 		"#": 28,
 		"Name": "acorn barnacle",
@@ -88,7 +89,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2832,
-		"Unique Entry ID": "QjvNJrjo5pNqZzuGq"
+		"Unique Entry ID": "QjvNJrjo5pNqZzuGq",
+		"Type": "sea"
 	},{
 		"#": 19,
 		"Name": "chambered nautilus",
@@ -133,7 +135,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2856,
-		"Unique Entry ID": "cmNawSTGaZZjRi5sp"
+		"Unique Entry ID": "cmNawSTGaZZjRi5sp",
+		"Type": "sea"
 	},{
 		"#": 25,
 		"Name": "Dungeness crab",
@@ -178,7 +181,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7308,
-		"Unique Entry ID": "jTP553H6DNuKBSAKa"
+		"Unique Entry ID": "jTP553H6DNuKBSAKa",
+		"Type": "sea"
 	},{
 		"#": 23,
 		"Name": "firefly squid",
@@ -223,7 +227,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 6920,
-		"Unique Entry ID": "ETuWxdyZNpqeFCYby"
+		"Unique Entry ID": "ETuWxdyZNpqeFCYby",
+		"Type": "sea"
 	},{
 		"#": 39,
 		"Name": "flatworm",
@@ -268,7 +273,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2844,
-		"Unique Entry ID": "4LAq9YXXj4ZdfkSuK"
+		"Unique Entry ID": "4LAq9YXXj4ZdfkSuK",
+		"Type": "sea"
 	},{
 		"#": 24,
 		"Name": "gazami crab",
@@ -313,7 +319,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7191,
-		"Unique Entry ID": "ruLaEghgv3y3obBA2"
+		"Unique Entry ID": "ruLaEghgv3y3obBA2",
+		"Type": "sea"
 	},{
 		"#": 35,
 		"Name": "giant isopod",
@@ -358,7 +365,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2858,
-		"Unique Entry ID": "eGLoSDD4EWD2c6SGs"
+		"Unique Entry ID": "eGLoSDD4EWD2c6SGs",
+		"Type": "sea"
 	},{
 		"#": 18,
 		"Name": "gigas giant clam",
@@ -403,7 +411,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7214,
-		"Unique Entry ID": "EQmRaHjokMEGTDC7G"
+		"Unique Entry ID": "EQmRaHjokMEGTDC7G",
+		"Type": "sea"
 	},{
 		"#": 36,
 		"Name": "horseshoe crab",
@@ -448,7 +457,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2857,
-		"Unique Entry ID": "bbhHaiT2qwcTy46X5"
+		"Unique Entry ID": "bbhHaiT2qwcTy46X5",
+		"Type": "sea"
 	},{
 		"#": 34,
 		"Name": "lobster",
@@ -493,7 +503,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2849,
-		"Unique Entry ID": "5DadWMEddJREFyXKo"
+		"Unique Entry ID": "5DadWMEddJREFyXKo",
+		"Type": "sea"
 	},{
 		"#": 32,
 		"Name": "mantis shrimp",
@@ -538,7 +549,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2845,
-		"Unique Entry ID": "WvZWyzkotj6WQ3tLy"
+		"Unique Entry ID": "WvZWyzkotj6WQ3tLy",
+		"Type": "sea"
 	},{
 		"#": 9,
 		"Name": "moon jellyfish",
@@ -583,7 +595,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7245,
-		"Unique Entry ID": "iugx8EqNWqiwv73C7"
+		"Unique Entry ID": "iugx8EqNWqiwv73C7",
+		"Type": "sea"
 	},{
 		"#": 12,
 		"Name": "mussel",
@@ -628,7 +641,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7411,
-		"Unique Entry ID": "M784h47XqSbBSthgT"
+		"Unique Entry ID": "M784h47XqSbBSthgT",
+		"Type": "sea"
 	},{
 		"#": 20,
 		"Name": "octopus",
@@ -673,7 +687,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2854,
-		"Unique Entry ID": "f7amqwd7b3fHnvPFA"
+		"Unique Entry ID": "f7amqwd7b3fHnvPFA",
+		"Type": "sea"
 	},{
 		"#": 13,
 		"Name": "oyster",
@@ -718,7 +733,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2833,
-		"Unique Entry ID": "aacYapCp5wKdQDCmB"
+		"Unique Entry ID": "aacYapCp5wKdQDCmB",
+		"Type": "sea"
 	},{
 		"#": 11,
 		"Name": "pearl oyster",
@@ -763,7 +779,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2838,
-		"Unique Entry ID": "Hr2jZ9XybS3jYFw8H"
+		"Unique Entry ID": "Hr2jZ9XybS3jYFw8H",
+		"Type": "sea"
 	},{
 		"#": 27,
 		"Name": "red king crab",
@@ -808,7 +825,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2852,
-		"Unique Entry ID": "F3XTwHJQcfdrJk4vk"
+		"Unique Entry ID": "F3XTwHJQcfdrJk4vk",
+		"Type": "sea"
 	},{
 		"#": 14,
 		"Name": "scallop",
@@ -853,7 +871,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2839,
-		"Unique Entry ID": "fMwWEu3Zwy6tZdX2X"
+		"Unique Entry ID": "fMwWEu3Zwy6tZdX2X",
+		"Type": "sea"
 	},{
 		"#": 8,
 		"Name": "sea anemone",
@@ -898,7 +917,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2840,
-		"Unique Entry ID": "fre7kn6ALvnpnH8yC"
+		"Unique Entry ID": "fre7kn6ALvnpnH8yC",
+		"Type": "sea"
 	},{
 		"#": 3,
 		"Name": "sea cucumber",
@@ -943,7 +963,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2842,
-		"Unique Entry ID": "2jxxcGooLMwyyiNQc"
+		"Unique Entry ID": "2jxxcGooLMwyyiNQc",
+		"Type": "sea"
 	},{
 		"#": 2,
 		"Name": "sea grapes",
@@ -988,7 +1009,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2830,
-		"Unique Entry ID": "eBdtw3eCrMuP9LWyn"
+		"Unique Entry ID": "eBdtw3eCrMuP9LWyn",
+		"Type": "sea"
 	},{
 		"#": 4,
 		"Name": "sea pig",
@@ -1033,7 +1055,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7303,
-		"Unique Entry ID": "kxxguvYvS4G3o7E5x"
+		"Unique Entry ID": "kxxguvYvS4G3o7E5x",
+		"Type": "sea"
 	},{
 		"#": 37,
 		"Name": "sea pineapple",
@@ -1078,7 +1101,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7228,
-		"Unique Entry ID": "e29uLe7tkErhipLfS"
+		"Unique Entry ID": "e29uLe7tkErhipLfS",
+		"Type": "sea"
 	},{
 		"#": 10,
 		"Name": "sea slug",
@@ -1123,7 +1147,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2843,
-		"Unique Entry ID": "3YjdEG93fagcXpiuf"
+		"Unique Entry ID": "3YjdEG93fagcXpiuf",
+		"Type": "sea"
 	},{
 		"#": 5,
 		"Name": "sea star",
@@ -1168,7 +1193,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2841,
-		"Unique Entry ID": "vAF9BcZt5q8gBQJmj"
+		"Unique Entry ID": "vAF9BcZt5q8gBQJmj",
+		"Type": "sea"
 	},{
 		"#": 6,
 		"Name": "sea urchin",
@@ -1213,7 +1239,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2831,
-		"Unique Entry ID": "3emjFCipv2bgQ6HaM"
+		"Unique Entry ID": "3emjFCipv2bgQ6HaM",
+		"Type": "sea"
 	},{
 		"#": 1,
 		"Name": "seaweed",
@@ -1258,7 +1285,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2620,
-		"Unique Entry ID": "KM4dfXCZ6CvZjEyw9"
+		"Unique Entry ID": "KM4dfXCZ6CvZjEyw9",
+		"Type": "sea"
 	},{
 		"#": 7,
 		"Name": "slate pencil urchin",
@@ -1303,7 +1331,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7267,
-		"Unique Entry ID": "TMftNBRmEGkvhpfnC"
+		"Unique Entry ID": "TMftNBRmEGkvhpfnC",
+		"Type": "sea"
 	},{
 		"#": 26,
 		"Name": "snow crab",
@@ -1348,7 +1377,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2850,
-		"Unique Entry ID": "bQNma5vbcs7wWRqY7"
+		"Unique Entry ID": "bQNma5vbcs7wWRqY7",
+		"Type": "sea"
 	},{
 		"#": 29,
 		"Name": "spider crab",
@@ -1393,7 +1423,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2853,
-		"Unique Entry ID": "gp2XNvGKNGmR6buT3"
+		"Unique Entry ID": "gp2XNvGKNGmR6buT3",
+		"Type": "sea"
 	},{
 		"#": 33,
 		"Name": "spiny lobster",
@@ -1438,7 +1469,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2848,
-		"Unique Entry ID": "9n5iphC8vQe6Rar72"
+		"Unique Entry ID": "9n5iphC8vQe6Rar72",
+		"Type": "sea"
 	},{
 		"#": 38,
 		"Name": "spotted garden eel",
@@ -1483,7 +1515,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2855,
-		"Unique Entry ID": "zYEHNF5Svak8ZARMW"
+		"Unique Entry ID": "zYEHNF5Svak8ZARMW",
+		"Type": "sea"
 	},{
 		"#": 31,
 		"Name": "sweet shrimp",
@@ -1528,7 +1561,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2846,
-		"Unique Entry ID": "5v5X2ipAYLaALxMsw"
+		"Unique Entry ID": "5v5X2ipAYLaALxMsw",
+		"Type": "sea"
 	},{
 		"#": 30,
 		"Name": "tiger prawn",
@@ -1573,7 +1607,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2847,
-		"Unique Entry ID": "EaMd8ansu3qtzAGbv"
+		"Unique Entry ID": "EaMd8ansu3qtzAGbv",
+		"Type": "sea"
 	},{
 		"#": 16,
 		"Name": "turban shell",
@@ -1618,7 +1653,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 2834,
-		"Unique Entry ID": "efXQqEuT2yZApwmGB"
+		"Unique Entry ID": "efXQqEuT2yZApwmGB",
+		"Type": "sea"
 	},{
 		"#": 21,
 		"Name": "umbrella octopus",
@@ -1663,7 +1699,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7252,
-		"Unique Entry ID": "kXFeaEJCCEkQ58T2e"
+		"Unique Entry ID": "kXFeaEJCCEkQ58T2e",
+		"Type": "sea"
 	},{
 		"#": 22,
 		"Name": "vampire squid",
@@ -1708,7 +1745,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7203,
-		"Unique Entry ID": "deJZZk2rxAnePwfzq"
+		"Unique Entry ID": "deJZZk2rxAnePwfzq",
+		"Type": "sea"
 	},{
 		"#": 40,
 		"Name": "Venus' flower basket",
@@ -1753,7 +1791,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7318,
-		"Unique Entry ID": "mSvTRhay8tmGXseMt"
+		"Unique Entry ID": "mSvTRhay8tmGXseMt",
+		"Type": "sea"
 	},{
 		"#": 15,
 		"Name": "whelk",
@@ -1798,7 +1837,8 @@ const seaCreatures = [
 		"Version Added": "1.3.0",
 		"Version Unlocked": "1.3.0",
 		"Internal ID": 7278,
-		"Unique Entry ID": "jSidvLMAXdiDAQNs6"
+		"Unique Entry ID": "jSidvLMAXdiDAQNs6",
+		"Type": "sea"
 	}
 ]
 export default seaCreatures;
