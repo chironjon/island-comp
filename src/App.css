@@ -1,10 +1,15 @@
 .App {
   text-align: center;
 }
-/*
-div {
+
+/*div {
   border: 1px solid black;
 }*/
+
+input {
+  font-size: 10px;
+  width: auto;
+}
 
 h1 {
   font-family: 'Bigelow Rules';
