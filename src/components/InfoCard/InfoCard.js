@@ -10,7 +10,7 @@ function capital_letter(str)
 
     return str.join(" ");
 }
-const InfoCard = ({ critter, type }) => (
+const InfoCard = ({ critter, type, hemi }) => (
 <div className="listItem">
 	<div className="card">
 	  <h1 className="name">{capital_letter(critter["Name"])}</h1>
@@ -27,23 +27,43 @@ const InfoCard = ({ critter, type }) => (
     </div>
 		<div className="weatherMonths">
       <div className="hemispheres">
-      	<div>
-	      	<p>North Hemisphere</p>
-	      </div>
-	      <div className="monthLetter">
-		      <p className={`${critter["NH Jan"] !== "NA" ? "avail" : ""}`}>Jan</p>
-		      <p className={`${critter["NH Feb"] !== "NA" ? "avail" : ""}`}>Feb</p>
-		      <p className={`${critter["NH Mar"] !== "NA" ? "avail" : ""}`}>Mar</p>
-		      <p className={`${critter["NH Apr"] !== "NA" ? "avail" : ""}`}>Apr</p>
-		      <p className={`${critter["NH May"] !== "NA" ? "avail" : ""}`}>May</p>
-		      <p className={`${critter["NH Jun"] !== "NA" ? "avail" : ""}`}>Jun</p>
-		      <p className={`${critter["NH Jul"] !== "NA" ? "avail" : ""}`}>Jul</p>
-		      <p className={`${critter["NH Aug"] !== "NA" ? "avail" : ""}`}>Aug</p>
-		      <p className={`${critter["NH Sep"] !== "NA" ? "avail" : ""}`}>Sep</p>
-		      <p className={`${critter["NH Oct"] !== "NA" ? "avail" : ""}`}>Oct</p>
-		      <p className={`${critter["NH Nov"] !== "NA" ? "avail" : ""}`}>Nov</p>
-		      <p className={`${critter["NH Dec"] !== "NA" ? "avail" : ""}`}>Dec</p>
-	      </div>
+		      {hemi === "NH"
+		    ? <div>
+			      <p>North Hemisphere</p>
+			      <div className="monthLetter">
+				      <p className={`${critter["NH Jan"] !== "NA" ? "avail" : ""}`}>Jan</p>
+				      <p className={`${critter["NH Feb"] !== "NA" ? "avail" : ""}`}>Feb</p>
+				      <p className={`${critter["NH Mar"] !== "NA" ? "avail" : ""}`}>Mar</p>
+				      <p className={`${critter["NH Apr"] !== "NA" ? "avail" : ""}`}>Apr</p>
+				      <p className={`${critter["NH May"] !== "NA" ? "avail" : ""}`}>May</p>
+				      <p className={`${critter["NH Jun"] !== "NA" ? "avail" : ""}`}>Jun</p>
+				      <p className={`${critter["NH Jul"] !== "NA" ? "avail" : ""}`}>Jul</p>
+				      <p className={`${critter["NH Aug"] !== "NA" ? "avail" : ""}`}>Aug</p>
+				      <p className={`${critter["NH Sep"] !== "NA" ? "avail" : ""}`}>Sep</p>
+				      <p className={`${critter["NH Oct"] !== "NA" ? "avail" : ""}`}>Oct</p>
+				      <p className={`${critter["NH Nov"] !== "NA" ? "avail" : ""}`}>Nov</p>
+				      <p className={`${critter["NH Dec"] !== "NA" ? "avail" : ""}`}>Dec</p>
+			      </div>
+			     </div>
+			    : hemi === "SH" &&
+		      <div>
+			      <p>South Hemisphere</p>
+			      <div className="monthLetter">
+				      <p className={`${critter["SH Jan"] !== "NA" ? "avail" : ""}`}>Jan</p>
+				      <p className={`${critter["SH Feb"] !== "NA" ? "avail" : ""}`}>Feb</p>
+				      <p className={`${critter["SH Mar"] !== "NA" ? "avail" : ""}`}>Mar</p>
+				      <p className={`${critter["SH Apr"] !== "NA" ? "avail" : ""}`}>Apr</p>
+				      <p className={`${critter["SH May"] !== "NA" ? "avail" : ""}`}>May</p>
+				      <p className={`${critter["SH Jun"] !== "NA" ? "avail" : ""}`}>Jun</p>
+				      <p className={`${critter["SH Jul"] !== "NA" ? "avail" : ""}`}>Jul</p>
+				      <p className={`${critter["SH Aug"] !== "NA" ? "avail" : ""}`}>Aug</p>
+				      <p className={`${critter["SH Sep"] !== "NA" ? "avail" : ""}`}>Sep</p>
+				      <p className={`${critter["SH Oct"] !== "NA" ? "avail" : ""}`}>Oct</p>
+				      <p className={`${critter["SH Nov"] !== "NA" ? "avail" : ""}`}>Nov</p>
+				      <p className={`${critter["SH Dec"] !== "NA" ? "avail" : ""}`}>Dec</p>
+			      </div>
+			     </div>
+			    }
       </div>
     </div>    
     <div className="price">

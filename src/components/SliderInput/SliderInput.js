@@ -5,7 +5,7 @@ const SliderInput = ({ sliderMonthChange, sliderHourChange }) => {
 	return(
 			<div>
 				<input 
-					// disabled 
+					 disabled 
 					id="month"
 					type="range"
 					steps="1" 
@@ -14,7 +14,7 @@ const SliderInput = ({ sliderMonthChange, sliderHourChange }) => {
 					onInput={sliderMonthChange}
 				/><br/>
 		    <input 
-		    	// disabled 
+		    	 disabled 
 		    	id="hour"
 		    	type="range"
 		    	steps="1"

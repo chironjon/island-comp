@@ -1,11 +1,11 @@
 import React from 'react';
 
 import SliderInput from '../../components/SliderInput/SliderInput';
-import './TimeInput.css';
+import './UserInput.css';
 
 
 
-const TimeInput = ({ onButtonPress, sliderMonthChange, sliderHourChange }) => (
+const UserInput = ({ onButtonPress, sliderMonthChange, sliderHourChange }) => (
 			<div>
 	      <p>TT'd Month:  and Time: </p>
   			<SliderInput  sliderMonthChange={sliderMonthChange} sliderHourChange={sliderHourChange}/>
@@ -13,4 +13,4 @@ const TimeInput = ({ onButtonPress, sliderMonthChange, sliderHourChange }) => (
 			</div>
 		)
 
-export default TimeInput;
+export default UserInput;
