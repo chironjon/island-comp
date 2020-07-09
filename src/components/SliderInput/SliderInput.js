@@ -1,26 +1,26 @@
 import React from 'react';
 import './SliderInput.css';
 
-const SliderInput = ({ slideChangeMonth, slideChangeTime }) => {
+const SliderInput = ({ sliderMonthChange, sliderHourChange }) => {
 	return(
 			<div>
 				<input 
-					disabled 
+					// disabled 
 					id="month"
 					type="range"
 					steps="1" 
 					min="0"
 					max="11"
-					onInput={slideChangeMonth}
+					onInput={sliderMonthChange}
 				/><br/>
 		    <input 
-		    	disabled 
+		    	// disabled 
 		    	id="hour"
 		    	type="range"
 		    	steps="1"
 		    	min="0"
 		    	max="23"
-		    	onInput={slideChangeTime}
+		    	onInput={sliderHourChange}
 		    />
 	    </div>
 		);

@@ -5,10 +5,10 @@ import './TimeInput.css';
 
 
 
-const TimeInput = ({ onButtonPress, onMonthChange, onTimeChange }) => (
+const TimeInput = ({ onButtonPress, sliderMonthChange, sliderHourChange }) => (
 			<div>
 	      <p>TT'd Month:  and Time: </p>
-  			<SliderInput  slideChangeMonth={onMonthChange} slideChangeTime={onTimeChange}/>
+  			<SliderInput  sliderMonthChange={sliderMonthChange} sliderHourChange={sliderHourChange}/>
   			<button onClick={onButtonPress}>RIGHT NOW</button>
 			</div>
 		)

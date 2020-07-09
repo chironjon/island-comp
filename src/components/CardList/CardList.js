@@ -1,7 +1,11 @@
 import React from 'react';
 import InfoCard from '../InfoCard/InfoCard';
 import './CardList.css';
-
+// const hemiFilter = (list) => {
+// 	list.filter(critter => {
+// 		critter.hemi 
+// 	})
+// };
 const CardList = (props) => (
 
 	<div className='card-list'>
