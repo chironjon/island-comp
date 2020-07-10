@@ -12,7 +12,7 @@ const CardList = (props) => (
 		{
 			// props.critters.filter()
       props.critters.map(critter => (
-      		<InfoCard key={critter["Internal ID"]} critter={critter} hemi={props.hemi} type={props.type}/>
+      		<InfoCard key={critter["Internal ID"]} critter={critter} hemi={props.hemi} />
     		)
       )
 	  }

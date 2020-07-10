@@ -10,9 +10,13 @@ function capital_letter(str)
 
     return str.join(" ");
 }
-const InfoCard = ({ critter, type, hemi }) => (
+
+const InfoCard = ({ critter, hemi }) => (
 <div className="listItem">
 	<div className="card">
+	   <div className="type">
+    	<p>{critter["Type"]}</p>
+    </div>
 	  <h1 className="name">{capital_letter(critter["Name"])}</h1>
     <div className="namePic">
       <img className="critterImg" src={`https://acnhcdn.com/latest/MenuIcon/${critter["Icon Filename"]}.png`} alt="critImg"/>

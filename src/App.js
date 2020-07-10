@@ -6,8 +6,8 @@ import CardList from './components/CardList/CardList';
 import './App.css';
 
 const critterList = critters.map((item) => item);
-const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC" ];
-const hours = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"];
+const hours = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"]
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
 let today = new Date();
 let curMon = today.getMonth();
 let curTime = today.getHours();
@@ -32,32 +32,12 @@ class App extends Component {
   componentDidUpdate() {
 
   };
-  onMonthChange = (event) => {
-      this.setState({ 
-        time: 
-          {
-            ...this.state.time, 
-            month: event.target.value 
-          }
-        }
-      );
-  };
-  onTimeChange = (event) => {
-      this.setState({ 
-        time: 
-          {
-            ...this.state.time, 
-            hour: event.target.value 
-          }
-        }
-      );
-  };
   sliderMonthChange = (event) => {
       this.setState({ 
         time: 
           {
             ...this.state.time, 
-            month: months[event.target.value] 
+            month: months[event.target.value]
           }
         }
       );
@@ -67,26 +47,37 @@ class App extends Component {
         time: 
           {
             ...this.state.time, 
-            hour: hours[event.target.value] 
+            hour: hours[event.target.value]
           }
         }
       );
   };
   onButtonPress = (event) => {
-    
+    this.setState({
+      time: {
+    month: months[curMon],
+    hour: hours[curTime]
+  }
+    })
   };
 
-  onInputChange = (e) => this.setState({ time: e.target.value });
   onHemiChange = (e) => this.setState({ hemi: e.target.value });
   onListChange = (e) => this.setState({ listType: e.target.value })
   handleChange = (e) => this.setState({ searchField: e.target.value });
-
+  
   render() {
     const { searchField, listType, hemi, time } = this.state;
+    const hemiCheck = "NH " + time.month
     const listFilter = critterList.filter(critter =>
       listType === "all" ? critter : critter["Type"].includes(listType)
     )
-    const searchFilter = listFilter.filter(critter =>
+    const monthsFilter = listFilter.filter(critter =>
+      critter[hemiCheck] !== "NA"
+    )
+    const hoursFilter = monthsFilter.filter(critter =>
+      critter[time.hour] === "TRUE"
+    )
+    const searchFilter = hoursFilter.filter(critter =>
       critter["Name"]
         .toLowerCase()
         .includes(searchField.toLowerCase())
@@ -171,6 +162,9 @@ class App extends Component {
               onButtonPress={this.onButtonPress} 
               sliderMonthChange={this.sliderMonthChange} 
               sliderHourChange={this.sliderHourChange}
+              time={time}
+              months={months}
+              hours={hours}
             />
           </div>
           <CardList 

@@ -27,6 +27,11 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 30% auto;
 }
+.type {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+}
 .namePic {
 
 }
