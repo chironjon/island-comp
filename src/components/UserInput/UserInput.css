@@ -1,15 +1,17 @@
-div {
+.time div {
   margin: 0;
   padding: 0;
   /* border-radius */
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
-.listBoxes {
+.time {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
 }
 /*input {
   float: right;

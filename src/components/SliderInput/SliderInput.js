@@ -1,11 +1,12 @@
 import React from 'react';
 import './SliderInput.css';
 
-const SliderInput = ({ sliderMonthChange, sliderHourChange }) => {
+const SliderInput = ({ sliderMonthChange, sliderHourChange, listTime }) => {
   return(
       <div>
+        <label>Month:</label>
         <input 
-          // disabled 
+          disabled={listTime === "now" || listTime === "year"}
           id="month"
           type="range"
           steps="1" 
@@ -13,8 +14,9 @@ const SliderInput = ({ sliderMonthChange, sliderHourChange }) => {
           max="11"
           onInput={sliderMonthChange}
         /><br/>
+        <label>Hour:</label>
         <input 
-          // disabled 
+          disabled={listTime !== "hour"} 
           id="hour"
           type="range"
           steps="1"

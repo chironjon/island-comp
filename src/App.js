@@ -14,6 +14,7 @@ let curTime = today.getHours();
 const initialState = {
   critterArr: critterList,
   listType: 'all',
+  listTime: 'year',
   searchField: '',
   time: {
     month: months[curMon],
@@ -52,36 +53,34 @@ class App extends Component {
         }
       );
   };
-  onButtonPress = (event) => {
-    this.setState({
-      time: {
-    month: months[curMon],
-    hour: hours[curTime]
-  }
-    })
-  };
-
+  listTimeChange = (e) => this.setState({ listTime: e.target.value })
   onHemiChange = (e) => this.setState({ hemi: e.target.value });
   onListChange = (e) => this.setState({ listType: e.target.value })
-  handleChange = (e) => this.setState({ searchField: e.target.value });
-  
+  handleSearchChange = (e) => this.setState({ searchField: e.target.value });
+  resetTime = () => {
+    this.setState({ time: { month: months[curMon], hour: hours[curTime]}})
+  }
   render() {
-    const { searchField, listType, hemi, time } = this.state;
-    const hemiCheck = "NH " + time.month
-    const listFilter = critterList.filter(critter =>
-      listType === "all" ? critter : critter["Type"].includes(listType)
-    )
-    const monthsFilter = listFilter.filter(critter =>
-      critter[hemiCheck] !== "NA"
-    )
-    const hoursFilter = monthsFilter.filter(critter =>
-      critter[time.hour] === "TRUE"
-    )
-    const searchFilter = hoursFilter.filter(critter =>
+    const { searchField, listType, listTime, hemi, time } = this.state;
+    // blank = all, search by name
+    const searchFilter = critterList.filter(critter =>
       critter["Name"]
         .toLowerCase()
-        .includes(searchField.toLowerCase())
+        .startsWith(searchField.toLowerCase())
     )
+    // which type of critter?
+    const listFilter = searchFilter.filter(critter =>
+      listType === "all" ? critter : critter["Type"].includes(listType)
+    )
+    // all year? by month? by hour? now?
+    const monthCheck = hemi + " " + time.month
+    const monthsFilter = listFilter.filter(critter =>
+      listTime === "year" ? critter : critter[monthCheck] !== "NA"
+    )
+    const hoursFilter = monthsFilter.filter(critter =>
+      listTime === "hour" ? critter[time.hour] === "TRUE" : critter
+    )
+    
 
     return (
       <div className="App">
@@ -89,88 +88,24 @@ class App extends Component {
           <h1>ACNH Critter Lookup</h1>
         </div>
         <div className="Content">
-          <div className="inputs">
-            <div className="hemiBoxes">
-            Working ==>
-              <input 
-                type="radio" 
-                id="NH" 
-                name="hemi" 
-                value="NH" 
-                checked={hemi === 'NH'} 
-                onChange={this.onHemiChange}
-              />
-              <label htmlFor="NH">North</label>
-              <input 
-                type="radio" 
-                id="SH" 
-                name="hemi" 
-                value="SH" 
-                checked={hemi === 'SH'} 
-                onChange={this.onHemiChange}
-              />
-              <label htmlFor="SH">South</label>
-            </div>
-            <div className="listBoxes">
-             Working ==>
-              <input 
-                type="radio" 
-                id="all" 
-                name="critters" 
-                value="all" 
-                checked={listType === 'all'} 
-                onChange={this.onListChange}
-              />
-              <label htmlFor="all">All</label>
-              <input
-                type="radio" 
-                id="insect" 
-                name="critters" 
-                value="insect" 
-                checked={listType === 'insect'} 
-                onChange={this.onListChange}
-              />
-              <label htmlFor="insects">Insects</label>
-              <input
-                type="radio" 
-                id="fish" 
-                name="critters" 
-                value="fish" 
-                checked={listType === 'fish'} 
-                onChange={this.onListChange}
-              />
-              <label htmlFor="fish">Fish</label>
-              <input
-                type="radio" 
-                id="sea" 
-                name="critters" 
-                value="sea" 
-                checked={listType === 'sea'} 
-                onChange={this.onListChange}
-              />
-              <label htmlFor="seaCreatures">Sea Creatures</label>
-            </div>{/*fixing up button functions*/}
-            <div className="searchBox">
-             Working ==>
-              <input 
-                type="text" 
-                placeholder="search by name" 
-                onChange={this.handleChange}
-              />
-            </div>
-            <UserInput 
-              onButtonPress={this.onButtonPress} 
-              sliderMonthChange={this.sliderMonthChange} 
-              sliderHourChange={this.sliderHourChange}
-              time={time}
-              months={months}
-              hours={hours}
-            />
-          </div>
+          <button onPress={this.resetTime} >RESET</button>
+          <UserInput 
+            hemiChange={this.onHemiChange}
+            handleSearchChange={this.handleSearchChange}
+            listType={listType}
+            onListChange={this.onListChange}
+            sliderMonthChange={this.sliderMonthChange} 
+            sliderHourChange={this.sliderHourChange}
+            listTime={listTime}
+            listTimeChange={this.listTimeChange}
+            resetTime={this.resetTime}
+            time={time}
+            hemi={hemi}
+          />
           <CardList 
             hemi={hemi} 
             time={time} 
-            critters={searchFilter}
+            critters={hoursFilter}
           />
         </div>
       </div>
