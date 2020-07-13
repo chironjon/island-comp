@@ -88,7 +88,6 @@ class App extends Component {
           <h1>ACNH Critter Lookup</h1>
         </div>
         <div className="Content">
-          <button onPress={this.resetTime} >RESET</button>
           <UserInput 
             hemiChange={this.onHemiChange}
             handleSearchChange={this.handleSearchChange}
