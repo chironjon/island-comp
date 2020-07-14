@@ -1,6 +1,8 @@
 # My Island Compendium WebApp
 ## Animal Crossing New Horizons
 
+* will move to stable host once one feature is fully functional
+
 ### Current Features
 
 * ##### Critter Lookup page
