@@ -89,6 +89,11 @@ class App extends Component {
       <div className="App">
         <div className="App-title">
           <h1>ACNH Critter Lookup</h1>
+          <div id="payme">
+            <p>Support Me→→→</p>
+            <p id="cashapp"><a href="https://cash.app/$ChironJon">CashApp</a></p>
+            <p id="venmo"><a href="https://www.venmo.com/ChironJon">Venmo</a></p>            
+          </div>
         </div>
         <div className="Content">
           <UserInput 

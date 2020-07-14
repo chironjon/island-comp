@@ -6,8 +6,26 @@
   border: 1px solid green;
 }*/
 
+#payme {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  font-size: 8px;
+  display: flex;
+  color: white;
+}
+
+#payme p {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 input {
-  font-size: 10px;
+  font-size: 12px;
   width: auto;
 }
 
