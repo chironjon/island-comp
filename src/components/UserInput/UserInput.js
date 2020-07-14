@@ -3,6 +3,7 @@ import NameSearch from '../../components/NameSearch/NameSearch';
 import HemiInput from '../../components/HemiInput/HemiInput';
 import ListTypeInput from '../../components/ListTypeInput/ListTypeInput';
 import TimeInput from '../../components/TimeInput/TimeInput';
+import Found from '../../components/Found/Found';
 import './UserInput.css';
 
 const UserInput = ({ handleSearchChange, hemi, hemiChange, listType, onListChange, resetTime, listTime, listTimeChange, sliderMonthChange, sliderHourChange, time }) => (
@@ -25,6 +26,9 @@ const UserInput = ({ handleSearchChange, hemi, hemiChange, listType, onListChang
 				sliderHourChange={sliderHourChange} 
 				time={time}
 			/>
+		</div>
+		<div className="foundDonate">
+			<Found />
 		</div>
 	</div>
 )

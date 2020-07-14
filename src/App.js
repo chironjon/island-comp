@@ -66,7 +66,7 @@ class App extends Component {
     const searchFilter = critterList.filter(critter =>
       critter["Name"]
         .toLowerCase()
-        .startsWith(searchField.toLowerCase())
+        .includes(searchField.toLowerCase())
     )
     // which type of critter?
     const listFilter = searchFilter.filter(critter =>
@@ -79,6 +79,9 @@ class App extends Component {
     )
     const hoursFilter = monthsFilter.filter(critter =>
       listTime === "hour" ? critter[time.hour] === "TRUE" : critter
+    )
+    const nowFilter = hoursFilter.filter(critter =>
+      listTime === "now" ? critter[time.hour] === "TRUE" : critter
     )
     
 
@@ -103,8 +106,7 @@ class App extends Component {
           />
           <CardList 
             hemi={hemi} 
-            time={time} 
-            critters={hoursFilter}
+            critters={nowFilter}
           />
         </div>
       </div>

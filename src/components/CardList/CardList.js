@@ -1,21 +1,21 @@
 import React from 'react';
 import InfoCard from '../InfoCard/InfoCard';
 import './CardList.css';
-// const hemiFilter = (list) => {
-// 	list.filter(critter => {
-// 		critter.hemi 
-// 	})
-// };
-const CardList = (props) => (
 
+const CardList = ({ hemi, critters }) => (
 	<div className='card-list'>
-		{
-			// props.critters.filter()
-      props.critters.map(critter => (
-      		<InfoCard key={critter["Internal ID"]} critter={critter} hemi={props.hemi} />
-    		)
-      )
-	  }
+		<div className='count'>showing: {critters.length} out of 200 critters</div>
+		<div className='list'>
+			{
+	      critters.map(critter => (
+	      		<InfoCard 
+	      			key={critter["Internal ID"]} 
+	      			critter={critter} 
+	      			hemi={hemi} 
+	      		/>
+	    		))
+		  }
+	  </div>
   </div>
 )
 
