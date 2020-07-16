@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ec875d44ff9ca02a1b78da4d05e2484f",
+    "revision": "44b46a5930d96cf9576a1a61bb4eb059",
     "url": "/island-comp/index.html"
   },
   {
-    "revision": "e87f6b1d8ea7c965c91e",
-    "url": "/island-comp/static/css/main.617a5e7f.chunk.css"
+    "revision": "a97300e933af52b6b241",
+    "url": "/island-comp/static/css/main.77cb4202.chunk.css"
   },
   {
     "revision": "3ce31eb1633242a7fa04",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/island-comp/static/js/2.922be4a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e87f6b1d8ea7c965c91e",
+    "revision": "a97300e933af52b6b241",
     "url": "/island-comp/static/js/main.8d83a2c4.chunk.js"
   },
   {

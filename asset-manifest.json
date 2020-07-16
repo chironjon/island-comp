@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/island-comp/static/css/main.617a5e7f.chunk.css",
+    "main.css": "/island-comp/static/css/main.77cb4202.chunk.css",
     "main.js": "/island-comp/static/js/main.8d83a2c4.chunk.js",
     "main.js.map": "/island-comp/static/js/main.8d83a2c4.chunk.js.map",
     "runtime-main.js": "/island-comp/static/js/runtime-main.98cd59e5.js",
@@ -8,15 +8,15 @@
     "static/js/2.922be4a0.chunk.js": "/island-comp/static/js/2.922be4a0.chunk.js",
     "static/js/2.922be4a0.chunk.js.map": "/island-comp/static/js/2.922be4a0.chunk.js.map",
     "index.html": "/island-comp/index.html",
-    "precache-manifest.ef94373d69396b136e02062f6c060bd8.js": "/island-comp/precache-manifest.ef94373d69396b136e02062f6c060bd8.js",
+    "precache-manifest.2cc2f5211496b7e63eb332b27956d562.js": "/island-comp/precache-manifest.2cc2f5211496b7e63eb332b27956d562.js",
     "service-worker.js": "/island-comp/service-worker.js",
-    "static/css/main.617a5e7f.chunk.css.map": "/island-comp/static/css/main.617a5e7f.chunk.css.map",
+    "static/css/main.77cb4202.chunk.css.map": "/island-comp/static/css/main.77cb4202.chunk.css.map",
     "static/js/2.922be4a0.chunk.js.LICENSE.txt": "/island-comp/static/js/2.922be4a0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.98cd59e5.js",
     "static/js/2.922be4a0.chunk.js",
-    "static/css/main.617a5e7f.chunk.css",
+    "static/css/main.77cb4202.chunk.css",
     "static/js/main.8d83a2c4.chunk.js"
   ]
 }
