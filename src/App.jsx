@@ -143,9 +143,9 @@ class App extends Component {
         </div>
         <div className="navbar">
           <ul className="nav">
-            <li><a href="/">Furniture[soon!]</a></li>
-            <li><a href="/">Villagers[soon!]</a></li>
-            <li><a href="/">Critters</a></li>
+            <li><a>Furniture[soon!]</a></li>
+            <li><a>Villagers[soon!]</a></li>
+            <li><a>Critters</a></li>
           </ul>
         </div>
         <div className="topHalf">
