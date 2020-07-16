@@ -26,16 +26,16 @@ h1 {
   p {
     padding: 5px;
   }
-}
 
-a {
-  text-decoration: none;
-  color: inherit;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .navbar {
   background-color: #078db3;
-  color: #0ccac4;
+
   .nav {
     list-style-type: none;
     padding: 0;
@@ -51,6 +51,7 @@ a {
         text-align: center;
         padding: 16px;
         text-decoration: none;
+        color: #0ccac4;
       
         &:hover{
           color: white;
