@@ -16,6 +16,13 @@
 
 ### ChangeLog:
 
+##### v0.3.2
+* search/filter options functional
+* added 
+  * sorting dropdown -- more sort options to come
+  * donate buttons
+* cleaned up UI and did some styling and shaved off some excess code
+
 ##### v0.3.0
 * fixed all input functions for the last time I hope
   * can search by: Name, list type, all year, by month, by hour, and current time
