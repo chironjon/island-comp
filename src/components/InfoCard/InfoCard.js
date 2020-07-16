@@ -1,5 +1,5 @@
 import React from 'react';
-import './InfoCard.css';
+import './InfoCard.scss';
 function capital_letter(str) 
 {
     str = str.split(" ");
@@ -15,7 +15,7 @@ const InfoCard = ({ critter, hemi }) => (
 <div className="listItem">
 	<div className="card">
 	   <div className="type">
-    	<p>{critter["Type"]}</p>
+    	<p>{critter["Type"]/* === "insect" ? <img className="typeImg" src={`https://acnhcdn.com/latest/FtrIcon/ToolNetPattern_Remake_7_0.png`} alt="typeimg"/>: <p></p>*/}</p>
     </div>
 	  <h1 className="name">{capital_letter(critter["Name"])}</h1>
     <div className="namePic">
@@ -31,7 +31,7 @@ const InfoCard = ({ critter, hemi }) => (
     </div>
 		<div className="weatherMonths">
       <div className="hemispheres">
-		      {hemi === "NH"
+		      { hemi === "NH"
 		    ? <div>
 			      <p>North Hemisphere</p>
 			      <div className="monthLetter">

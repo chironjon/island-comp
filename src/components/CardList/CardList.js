@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoCard from '../InfoCard/InfoCard';
-import './CardList.css';
+import './CardList.scss';
 
 const CardList = ({ hemi, critters }) => (
 	<div className='card-list'>

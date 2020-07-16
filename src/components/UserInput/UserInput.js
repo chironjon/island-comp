@@ -4,10 +4,13 @@ import HemiInput from '../../components/HemiInput/HemiInput';
 import ListTypeInput from '../../components/ListTypeInput/ListTypeInput';
 import TimeInput from '../../components/TimeInput/TimeInput';
 import Found from '../../components/Found/Found';
-import './UserInput.css';
+import './UserInput.scss';
 
-const UserInput = ({ handleSearchChange, hemi, hemiChange, listType, onListChange, resetTime, listTime, listTimeChange, sliderMonthChange, sliderHourChange, time }) => (
+const UserInput = ({ handleSearchChange, hemi, hemiChange, listType, onListChange, listTime, listTimeChange, dropMonthChange, dropHourChange, time }) => (
 	<div className="userinput">
+		{/*<div className="foundDonate">
+			<Found />
+		</div>*/}
 		<div className="nameInput">
 			<NameSearch handleSearchChange={handleSearchChange}/>
 		</div>
@@ -15,20 +18,16 @@ const UserInput = ({ handleSearchChange, hemi, hemiChange, listType, onListChang
 			<HemiInput hemiChange={hemiChange} hemi={hemi} />
 		</div>
 		<div className="listinput">
-			<ListTypeInput listType={listType} onListChange={onListChange}/>
+			<ListTypeInput onListChange={onListChange}/>
 		</div>
 		<div className="time">
 			<TimeInput 
-				resetTime={resetTime} 
 				listTime={listTime} 
 				listTimeChange={listTimeChange} 
-				sliderMonthChange={sliderMonthChange} 
-				sliderHourChange={sliderHourChange} 
+				dropMonthChange={dropMonthChange} 
+				dropHourChange={dropHourChange} 
 				time={time}
 			/>
-		</div>
-		<div className="foundDonate">
-			<Found />
 		</div>
 	</div>
 )

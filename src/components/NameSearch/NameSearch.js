@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './NameSearch.css';
+import './NameSearch.scss';
 
 const NameSearch = ({ handleSearchChange }) => (
 	<div className="searchBox">

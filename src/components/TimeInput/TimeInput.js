@@ -1,67 +1,23 @@
 import React from 'react';
 import SliderInput from '../../components/SliderInput/SliderInput';
-import './TimeInput.css';
+import './TimeInput.scss';
 
-const TimeInput = ({ resetTime, listTimeChange, listTime, time, sliderMonthChange, sliderHourChange }) => (
-	<div className="time">
-		<div className="timeRadios">
-			<div>
-				<input 
-        	type="radio" 
-        	id="year" 
-        	name="time" 
-        	value="year"
-        	onChange={listTimeChange}
-        	checked={listTime === 'year'}
-      	/>
-      	<label>
-					All year
-				</label>
-			</div>
-			<div>
-				<input 
-        	type="radio" 
-        	id="month" 
-        	name="time" 
-        	value="month" 
-        	onChange={listTimeChange}
-        	checked={listTime === 'month'}
-      	/>
-      	<label>
-					By Month
-				</label>
-			</div>
-			<div>
-				<input 
-        	type="radio" 
-        	id="hour" 
-        	name="time" 
-        	value="hour"
-        	onChange={listTimeChange}
-        	checked={listTime === 'hour'} 
-      	/>
-      	<label>
-					By Hour
-				</label>
-			</div>
-			<div>
-				<input 
-          type="radio" 
-          id="now" 
-          name="time" 
-          value="now"
-          onChange={listTimeChange}
-          onClick={resetTime}
-          checked={listTime === 'now'} 
-        />
-	      <label>NOW</label>
-      </div>
+const TimeInput = ({ listTimeChange, listTime, time, dropMonthChange, dropHourChange }) => (
+	<div className="timeinput">
+    <div className="timeSelect">
+      <label htmlFor="timeDrop">Time Frame: </label>
+      <select name="timeDrop" id="timeDrop" onChange={listTimeChange}>
+        <option value="year">All Year</option>
+        <option value="month">By Month</option>
+        <option value="hour">By Hour</option>
+        <option value="now">Now</option>
+      </select>
     </div>
 		<div className="sliders">
-      <p>Hour {time.hour} of a lovely day in {time.month}.</p>
+      <div>{listTime === "year" || listTime === "month" ? <span></span> : <span>Hour {time.hour} in </span>}{listTime === "year" ? <span></span> : <span>{time.month}</span>}</div>
 			<SliderInput 
-				sliderMonthChange={sliderMonthChange} 
-				sliderHourChange={sliderHourChange} 
+				dropMonthChange={dropMonthChange} 
+				dropHourChange={dropHourChange} 
 				listTime={listTime}
 			/>
 		</div>

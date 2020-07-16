@@ -1,0 +1,14 @@
+.dropMenu {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.labels {
+	display: inline-block;
+  text-align: right;
+}
+.drops {
+	display: inline-block;
+  text-align: left;
+}
+

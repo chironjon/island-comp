@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Found.css';
+import './Found.scss';
 
 const Found = () => (
 	<div>
@@ -11,7 +11,7 @@ const Found = () => (
 			value="found"
 			name="foundDonate"
 		/>
-		<label>Found</label>
+		<label forHtml="foundDonate">Found</label>
 		<input 
 		disabled
 			type="checkbox"
@@ -19,7 +19,7 @@ const Found = () => (
 			value="donated"
 			name="foundDonate"
 		/>
-		<label>Donated</label>
+		<label forHtml="foundDonate">Donated</label>
 	</div>
 )
 

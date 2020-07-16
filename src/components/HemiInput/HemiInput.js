@@ -1,27 +1,14 @@
 import React from 'react';
 
-import './HemiInput.css';
+import './HemiInput.scss';
 
-const HemiInput = ({ hemi, hemiChange }) => (
+const HemiInput = ({ hemiChange }) => (
   <div className="hemiBoxes">
-    <input 
-      type="radio" 
-      id="NH" 
-      name="hemi" 
-      value="NH" 
-      checked={hemi === 'NH'} 
-      onChange={hemiChange}
-    />
-    <label htmlFor="NH">North</label>
-    <input 
-      type="radio" 
-      id="SH" 
-      name="hemi" 
-      value="SH" 
-      checked={hemi === 'SH'} 
-      onChange={hemiChange}
-    />
-    <label htmlFor="SH">South</label>
+    <label htmlFor="hemi">Hemisphere: </label>
+    <select name="hemi" id="hemiDrop" onChange={hemiChange}>
+    	<option value="NH">North</option>
+    	<option value="SH">South</option>
+    </select>
   </div>
 )
 

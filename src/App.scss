@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  background-color: #067d9e;
+}
+
+.App-title {
+  background-color: #078db3;
+  display: flex;
+  justify-content: center;
+  
+}
+
+h1 {
+    font-family: 'Bigelow Rules';
+    color: #0ccac4;
+
+}
+#payme {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  font-size: 8px;
+  display: flex;
+  color: white;
+
+  p {
+    padding: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.navbar {
+  background-color: #078db3;
+  color: #0ccac4;
+  .nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+
+    li {
+      float: right;
+      font-size: 12px;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.userInput {
+  background-color: #0ccac4;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  /* border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+
+  input {
+    font-size: 12px;
+    width: auto;
+  }
+}
+
+.topHalf {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.sortInput {
+  color: white;
+  background-color: #078db3;
+  /* border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+}
+
+.cardList {
+  color: white;
+  background-color: #0ccac4;
+  /* border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
