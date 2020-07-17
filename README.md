@@ -40,9 +40,7 @@
 # CREDITS
 especial thanks to:
 
-ninji and the crew for all the data mining making everyones projects possible,
-
-the people in the discord for all the inspiration,
+data miners for making everyones projects possible,
 
 andrei, the instructors and others for teaching me what i know,
 

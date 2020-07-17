@@ -6,7 +6,7 @@ import TimeInput from '../../components/TimeInput/TimeInput';
 import Found from '../../components/Found/Found';
 import './UserInput.scss';
 
-const UserInput = ({ handleSearchChange, hemi, hemiChange, listType, onListChange, listTime, listTimeChange, dropMonthChange, dropHourChange, time }) => (
+const UserInput = ({ handleSearchChange, hemi, hemiChange,  onListChange, listTime, listTimeChange, dropMonthChange, dropHourChange, time }) => (
 	<div className="userinput">
 		{/*<div className="foundDonate">
 			<Found />
