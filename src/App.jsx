@@ -12,6 +12,7 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 let today = new Date();
 let curMon = today.getMonth();
 let curTime = today.getHours();
+
 const initialState = {
   critterArr: critterList,
   listType: 'all',
@@ -31,6 +32,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = initialState;
+
   };
   componentDidMount() {
     console.log("state on mount ", this.state)
@@ -58,6 +60,7 @@ class App extends Component {
         }
       );
   };
+  resetEverything = () => this.setState( this.state = initialState)
   listTimeChange = (e) => {
     this.setState({ listTime: e.target.value })
     if (e.target.value === "now"){
@@ -70,29 +73,57 @@ class App extends Component {
   onListChange = (e) => this.setState({ listType: e.target.value })
   handleSearchChange = (e) => this.setState({ searchField: e.target.value });
   render() {
+
     const { searchField, listType, listTime, hemi, time, sortBy } = this.state;
     // blank = all, search by name
-    const searchFilter = critterList.filter(critter =>
+    //const searchFilter = critterList.filter(critter =>
+    //  critter["Name"]
+    //    .toLowerCase()
+    //    .includes(searchField.toLowerCase())
+    //)
+    // which type of critter?
+    const monthCheck = hemi + " " + time.month
+    const listFilter = critterList.filter(critter =>
+      listType === "all" ? critter : critter["Type"].includes(listType)
+    ) // if listType is all, return all critters, if not return critters w/ that listType
+    .filter(critter =>
+      listTime === "year" ? critter : critter[monthCheck] !== "NA"
+    )//if listTime is year return all critters, if not return critters that match current month
+    .filter(critter =>
+      listTime === "hour" ? critter[time.hour] === "TRUE" : critter
+    )// if listTime is hour return all critters with matching hour input, if not just return all
+    .filter(critter =>
+      listTime === "now" ? critter[time.hour] === "TRUE" : critter
+    )
+    .filter(critter =>
       critter["Name"]
         .toLowerCase()
         .includes(searchField.toLowerCase())
     )
-    // which type of critter?
-    const listFilter = searchFilter.filter(critter =>
-      listType === "all" ? critter : critter["Type"].includes(listType)
-    )
+    // const filterList = critterList;
+    // for(let critter of filterList){ 
+    //   if(critter["Name"].toLowerCase().includes(searchField.toLowerCase())){
+    //     if(listTime === "year"){
+    //       if(listTime === "hour"){
+    //         return critter[time.hour] === "tru"
+    //         if(listTime === "now"){
+
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
     // all year? by month? by hour? now?
-    const monthCheck = hemi + " " + time.month
-    const monthsFilter = listFilter.filter(critter =>
-      listTime === "year" ? critter : critter[monthCheck] !== "NA"
-    )
-    const hoursFilter = monthsFilter.filter(critter =>
-      listTime === "hour" ? critter[time.hour] === "TRUE" : critter
-    )
-    const nowFilter = hoursFilter.filter(critter =>
-      listTime === "now" ? critter[time.hour] === "TRUE" : critter
-    )
-    const sortArr = nowFilter.sort(function(a, b) {
+    //const monthsFilter = listFilter.filter(critter =>
+    //  listTime === "year" ? critter : critter[monthCheck] !== "NA"
+    //)
+    //const hoursFilter = monthsFilter.filter(critter =>
+    //  listTime === "hour" ? critter[time.hour] === "TRUE" : critter
+    //)
+    //const nowFilter = hoursFilter.filter(critter =>
+    //  listTime === "now" ? critter[time.hour] === "TRUE" : critter
+    //)
+    const sortArr = listFilter.sort((a, b) => {
       switch (sortBy.char) {
         case 'name':
           var nameA = a["Name"].toUpperCase();
@@ -132,18 +163,22 @@ class App extends Component {
     });
   
     return (
+
       <div className="App">
         <div className="App-title">
           <h1>ACNH Island Compendium</h1>
         </div>
         <div className="navbar">
           <ul className="nav">
-            <li><a>Furniture[soon!]</a></li>
+            <li><a>[soon!]</a></li>
+            <li><a>Daily Life[soon!]</a></li>
+            <li><a>Items[Coming!]</a></li>
             <li><a>Villagers[soon!]</a></li>
             <li><a>Critters</a></li>
           </ul>
         </div>
         <div className="topHalf">
+          <button onClick={this.resetEverything}>RESET</button>
           <div className="userInput">
             <UserInput 
               hemiChange={this.onHemiChange}
