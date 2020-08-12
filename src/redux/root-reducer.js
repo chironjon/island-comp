@@ -3,9 +3,11 @@ import { combineReducers } from 'redux';
 import userReducer from './user/user.reducer';
 import directoryReducer from './directory/directory.reducer';
 import collectionReducer from './collection/collection.reducer';
+import infoReducer from './info/info.reducer';
 
 export default combineReducers({
   user: userReducer,
   directory: directoryReducer,
-  collection: collectionReducer
+  collection: collectionReducer,
+  info: infoReducer
 })

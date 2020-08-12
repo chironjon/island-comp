@@ -1,5 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Emoji from '../emoji/emoji.component';
+
+import { toggleInfoHidden } from '../../redux/info/info.actions';
 
 import './collection-item.styles.scss';
 
@@ -14,8 +17,8 @@ function capital_letter(str)
     return str.join(" ");
 }
 
-const CollectionItem = ({item}) => (
-  <div className='collection-item'>
+const CollectionItem = ({item, toggleInfoHidden}) => (
+  <div className='collection-item' onClick={toggleInfoHidden}>
     
       {(() => { 
         switch(item["Type"]) {
@@ -95,4 +98,11 @@ const CollectionItem = ({item}) => (
   </div>
 );
 
-export default CollectionItem;
+const mapDispatchToProps = dispatch => ({
+  toggleInfoHidden: () => dispatch(toggleInfoHidden())
+})
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(CollectionItem);

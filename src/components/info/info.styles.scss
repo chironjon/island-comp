@@ -1,0 +1,19 @@
+.info-container {
+  width: 80%;
+  height: 380px;
+  background: white;
+  border: 1px solid red;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.5;
+  visibility: visible;
+  &.off {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.content {
+  height: 80%;
+  background: gray;
+}
