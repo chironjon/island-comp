@@ -1,7 +1,8 @@
 import InfoActionTypes from './info.types';
 
 const INITIAL_STATE = {
-  hidden: true
+  hidden: true,
+  currentInfoItem: []
 };
 
 const infoReducer = (state = INITIAL_STATE, action) => {
@@ -10,6 +11,15 @@ const infoReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         hidden: !state.hidden
+      }
+    case InfoActionTypes.ADD_ITEM:
+      return {
+        ...state,
+        currentInfoItem: [action.payload]
+      }
+    case InfoActionTypes.REMOVE_ITEM:
+      return {
+        state: INITIAL_STATE
       }
       default:
         return state;

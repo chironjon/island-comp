@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Emoji from '../emoji/emoji.component';
 
-import { toggleInfoHidden } from '../../redux/info/info.actions';
+
+import { toggleInfoHidden, addItemInfo } from '../../redux/info/info.actions';
 
 import './collection-item.styles.scss';
 
@@ -17,27 +18,28 @@ function capital_letter(str)
     return str.join(" ");
 }
 
-const CollectionItem = ({item, toggleInfoHidden}) => (
-  <div className='collection-item' onClick={toggleInfoHidden}>
-    
-      {(() => { 
+const CollectionItem = ({item, toggleInfoHidden, addItemInfo}) => {
+  
+  return (
+  <div className='collection-item' >
+  <div className='info-mark' onClick={() => {toggleInfoHidden(); addItemInfo(item);}}><Emoji symbol={"?"} /></div>
+      <div key={item["Unique Entry ID"]} className='item-card'>
+      <span className='name'>{capital_letter(item["Name"])}</span>
+    {(() => { 
         switch(item["Type"]) {
           case 'insect':
             return (
-              <div key={item["Unique Entry ID"]} className='item-card'>
-              <span className='name'>{capital_letter(item["Name"])}</span>
+              <div className='item-card'>
                 <div className='image' style={{backgroundImage: `url(https://acnhcdn.com/latest/MenuIcon/${item["Icon Filename"]}.png)`}}/>
                 <div className='collection-footer'>
                   <span className='time'>{item["Time"]}</span>
                   <span className='price'>{item["Sell"]}</span>
-                  <div className='found'><Emoji symbol={"✔"} /></div>
                 </div>
               </div>
             );
           case 'fish':
             return (
-              <div key={item["Unique Entry ID"]} className='item-card'>
-              <span className='name'>{capital_letter(item["Name"])}</span>
+              <div className='item-card'>
                 <div className='image' style={{backgroundImage: `url(https://acnhcdn.com/latest/MenuIcon/${item["Icon Filename"]}.png)`}}/>
                 <div className='collection-footer'>
                   <span className='time'>{item["Time"]}</span>
@@ -47,8 +49,7 @@ const CollectionItem = ({item, toggleInfoHidden}) => (
             );
           case 'sea':
             return (
-              <div key={item["Unique Entry ID"]} className='item-card'>
-              <span className='name'>{capital_letter(item["Name"])}</span>
+              <div className='item-card'>
                 <div className='image' style={{backgroundImage: `url(https://acnhcdn.com/latest/MenuIcon/${item["Icon Filename"]}.png)`}}/>
                 <div className='collection-footer'>
                   <span className='time'>{item["Time"]}</span>
@@ -56,20 +57,9 @@ const CollectionItem = ({item, toggleInfoHidden}) => (
                 </div>
               </div>
             );
-          case 'music':
-            return (
-              <div key={item["Unique Entry ID"]} className='item-card'>
-              <span className='name'>{capital_letter(item["Name"])}</span>
-                <div className='image' style={{backgroundImage: `url(https://acnhcdn.com/latest/Audio/${item["Filename"]}.png)`}}/>
-                <div className='collection-footer'>
-                  
-                </div>
-              </div>
-            );
           case 'art':
             return (
-              <div key={item["Unique Entry ID"]} className='item-card'>
-              <span className='name'>{capital_letter(item["Name"])}</span>
+              <div className='item-card'>
                 <div className='image' style={{backgroundImage: `url(https://acnhcdn.com/latest/FtrIcon/${item["Filename"]}.png)`}}/>
                 <div className='collection-footer'>
                   <span className='name'>{item["Name"]}</span>
@@ -79,8 +69,7 @@ const CollectionItem = ({item, toggleInfoHidden}) => (
             );
           case 'fossil':
             return (
-              <div key={item["Unique Entry ID"]} className='item-card'>
-              <span className='name'>{capital_letter(item["Name"])}</span>
+              <div className='item-card'>
                 <div className='image' style={{backgroundImage: `url(https://acnhcdn.com/latest/FtrIcon/${item["Filename"]}.png)`}}/>
                 <div className='collection-footer'>
                   <span className='name'>{item["Name"]}</span>
@@ -94,12 +83,14 @@ const CollectionItem = ({item, toggleInfoHidden}) => (
             )
         }
       })()}
-    
+      <div className='found'><Emoji symbol={"✔"} /></div>
+      </div>
   </div>
-);
-
+)};
+    
 const mapDispatchToProps = dispatch => ({
-  toggleInfoHidden: () => dispatch(toggleInfoHidden())
+  toggleInfoHidden: () => dispatch(toggleInfoHidden()),
+  addItemInfo: item => dispatch(addItemInfo(item))
 })
 
 export default connect(

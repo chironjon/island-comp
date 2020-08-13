@@ -1,11 +1,12 @@
 .menu-item {
-    min-width: 30%;
+    min-width: 250px;
+    max-width: 250px;
     height: 240px;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    
     margin: 0 7.5px 15px;
     overflow: hidden;
 
@@ -18,7 +19,7 @@
       }
 
       & .content {
-        opacity: 1.9;
+        opacity: 1;
       }
     }
 
@@ -42,7 +43,7 @@
       background-size: cover;
     }
 
-    .content {
+    .menu-item-content {
       height: 90px;
       padding: 0 25px;
       display: flex;

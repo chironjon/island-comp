@@ -13,7 +13,7 @@
   -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
   -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
   box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
-  cursor: pointer;
+  
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
   font-size: 13px;
@@ -25,6 +25,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .info-mark {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 15px;
+    cursor: pointer;
   }
   .image {
     width: 50px;
@@ -39,10 +46,11 @@
     flex-direction: column;
     font-size: 10px;
 
-    .found {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
+    
+  }
+  .found {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
   }
 }

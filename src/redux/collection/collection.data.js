@@ -14993,7 +14993,8 @@ const COLLECTION_DATA = [
 		id: 4,
 		title: 'Music',
 		routeName: 'music',
-		category: 'collections',
+		category: 'catalog',
+		subcategory: 'music',
 		list: [
 			{
 				"Name": "Agent K.K.",
@@ -16867,6 +16868,7 @@ const COLLECTION_DATA = [
 		title: 'Art',
 		routeName: 'art',
 		category: 'collections',
+		subcategory: 'museum',
 		list : [
 			{
 				"Name": "academic painting",
@@ -19070,6 +19072,7 @@ const COLLECTION_DATA = [
 		title: 'Fossils',
 		routeName: 'fossils',
 		category: 'collections',
+		subcategory: 'museum',
 		list: [
 			{
 				"Name": "acanthostega",

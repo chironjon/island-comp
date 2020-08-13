@@ -4,7 +4,10 @@ const buttonStyles = css`
   background-color: #067d9e;
   color: #0ccac4;
   border: none;
-
+  /* border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   &:hover {
     background-color: #0ccac4;
     color: #067d9e;

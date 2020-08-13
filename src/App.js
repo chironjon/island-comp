@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import './App.css';
 
+import Info from './components/info/info.component';
 import HomePage from './pages/homepage/homepage.component';
 import CatalogPage from './pages/catalogpage/catalogpage.component';
 import Collections from './pages/collection/collection.component';
@@ -15,6 +16,7 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 
 import collection from './redux/collection/collection.data.js';
+
 
 class App extends React.Component {
   unsubscribeFromAuth = null
@@ -64,13 +66,16 @@ class App extends React.Component {
             } 
           />
         </Switch>
+        { this.props.hidden ? null : <Info /> }
       </div>
     );
   }
 }
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = ({ user: { currentUser }, info: { hidden, currentInfoItem } }) => ({
+  currentUser,
+  currentInfoItem,
+  hidden
 })
 
 const mapDispatchToProps = dispatch => ({

@@ -11,19 +11,20 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
   height: 90%;
-  width: 100%;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   .logo {
     height: 100%;
-    width: 40px;
+    width: 50px;
   }
 `;
 
 export const OptionsContainer = styled.div`
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
 `;
