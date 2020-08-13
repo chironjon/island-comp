@@ -16,7 +16,7 @@ export const LogoContainer = styled(Link)`
   align-items: center;
   justify-content: flex-start;
   .logo {
-    height: 100%;
+    height: 50px;
     width: 50px;
   }
 `;

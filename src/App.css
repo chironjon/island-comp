@@ -2,7 +2,7 @@ body {
   font-family: 'Short Stack', cursive;
   padding: 5px 10px;
   text-align: center;
-  color: #0ccac4;
+  color: #8bfffb;
 }
 h1 {
   font-family: 'Delius Swash Caps', cursive;
@@ -10,7 +10,7 @@ h1 {
 }
 a {
   text-decoration: none;
-  color: #0ccac4;
+  color: #8bfffb;
 }
 * {
   box-sizing: border-box;

@@ -2,14 +2,14 @@ import styled, { css } from 'styled-components';
 
 const buttonStyles = css`
   background-color: #067d9e;
-  color: #0ccac4;
+  color: #8bfffb;
   border: none;
   /* border-radius */
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   &:hover {
-    background-color: #0ccac4;
+    background-color: #8bfffb;
     color: #067d9e;
     border: none;
   }
@@ -54,7 +54,7 @@ export const CustomButtonContainer = styled.button`
   padding: 0 35px 0 35px;
   font-size: 14px;
   background-color: #067d9e;
-  color: #0ccac4;
+  color: #8bfffb;
   font-weight: bolder;
   border: none;
   cursor: pointer;

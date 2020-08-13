@@ -1,9 +1,14 @@
+import critterpedia from '../../assets/DeviceIconBook^w.png'
+import catalog from '../../assets/DeviceIconCatalogue^w.png'
+import journal from '../../assets/DeviceIconProfile^w.png'
+import villagers from '../../assets/DeviceIconBestFriend^w.png'
+
 const INITIAL_STATE = {
   sections: [
     {
       title: 'catalog',
       subtitle: 'coming soon',
-      imageUrl: 'https://via.placeholder.com/350x150',
+      imageUrl: catalog,
       id: 1,
       size: 'box',
       linkUrl: '/catalog'
@@ -11,7 +16,7 @@ const INITIAL_STATE = {
     {
       title: 'journal',
       subtitle: 'coming soon',
-      imageUrl: 'https://via.placeholder.com/350x150',
+      imageUrl: journal,
       id: 2,
       size: 'box',
       linkUrl: '/journal'
@@ -19,18 +24,18 @@ const INITIAL_STATE = {
     {
       title: 'villagers',
       subtitle: 'coming soon',
-      imageUrl: 'https://via.placeholder.com/350x150',
+      imageUrl: villagers,
       id: 3,
       size: 'box',
       linkUrl: '/villagers'
     },
     {
-      title: 'collections',
+      title: 'critterpedia',
       subtitle: '',
-      imageUrl: 'https://vignette.wikia.nocookie.net/animalcrossing/images/4/44/NH-Icon-Nook_Phone-Critterpedia.png',
+      imageUrl: critterpedia,
       id: 4,
       size: 'box',
-      linkUrl: '/collections'
+      linkUrl: '/critterpedia'
     }
   ]
 };

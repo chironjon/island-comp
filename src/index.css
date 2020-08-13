@@ -1,5 +1,7 @@
 html {
-	background-color: #067d9e;
+  background-color: #067d9e;
+  max-width: 800px;
+  margin: auto;
 }
 body {
   margin: 0;

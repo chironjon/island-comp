@@ -16867,7 +16867,7 @@ const COLLECTION_DATA = [
 		id: 5,
 		title: 'Art',
 		routeName: 'art',
-		category: 'collections',
+		category: 'catalog',
 		subcategory: 'museum',
 		list : [
 			{
@@ -19071,7 +19071,7 @@ const COLLECTION_DATA = [
 		id: 6,
 		title: 'Fossils',
 		routeName: 'fossils',
-		category: 'collections',
+		category: 'catalog',
 		subcategory: 'museum',
 		list: [
 			{
@@ -20468,7 +20468,8 @@ const COLLECTION_DATA = [
 		id: 7, 
 		title: 'Villagers',
 		routeName: 'villagers',
-		category: '',
+		category: 'villagers',
+		subcategory: 'characters',
 		list: []
 	},
 	{
@@ -20476,6 +20477,7 @@ const COLLECTION_DATA = [
 		title: 'Housewares',
 		routeName: 'housewares',
 		category: 'catalog',
+		subcategory: 'furniture',
 		list: []
 	},
 	{
@@ -20483,6 +20485,7 @@ const COLLECTION_DATA = [
 		title: 'Miscellaneous',
 		routeName: 'misc',
 		category: 'catalog',
+		subcategory: 'furniture',
 		list: []
 	},
 	{
@@ -20490,6 +20493,7 @@ const COLLECTION_DATA = [
 		title: 'Wall-mounted',
 		routeName: 'wall-mounted',
 		category: 'catalog',
+		subcategory: 'furniture',
 		list: []
 	},
 	{
@@ -20497,6 +20501,7 @@ const COLLECTION_DATA = [
 		title: 'Wallpaper',
 		routeName: 'wallpaper',
 		category: 'catalog',
+		subcategory: 'floors-walls',
 		list: []
 	},
 	{
@@ -20504,6 +20509,7 @@ const COLLECTION_DATA = [
 		title: 'Floors',
 		routeName: 'floors',
 		category: 'catalog',
+		subcategory: 'floors-walls',
 		list: []
 	},
 	{
@@ -20511,6 +20517,7 @@ const COLLECTION_DATA = [
 		title: 'Rugs',
 		routeName: 'rugs',
 		category: 'catalog',
+		subcategory: 'floors-walls',
 		list: []
 	},
 	{
@@ -20518,6 +20525,7 @@ const COLLECTION_DATA = [
 		title: 'Photos',
 		routeName: 'photos',
 		category: 'catalog',
+		subcategory: 'villagers',
 		list: []
 	},
 	{
@@ -20525,6 +20533,7 @@ const COLLECTION_DATA = [
 		title: 'Posters',
 		routeName: 'posters',
 		category: 'catalog',
+		subcategory: 'villagers',
 		list: []
 	},
 	{
@@ -20532,6 +20541,7 @@ const COLLECTION_DATA = [
 		title: 'Tools',
 		routeName: 'tools',
 		category: 'catalog',
+		subcategory: 'tools',
 		list: []
 	},
 	{
@@ -20539,6 +20549,7 @@ const COLLECTION_DATA = [
 		title: 'Fencing',
 		routeName: 'fencing',
 		category: 'catalog',
+		subcategory: 'tools',
 		list: []
 	},
 	{
@@ -20546,6 +20557,7 @@ const COLLECTION_DATA = [
 		title: 'Tops',
 		routeName: 'tops',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20553,6 +20565,7 @@ const COLLECTION_DATA = [
 		title: 'Bottom',
 		routeName: 'bottom',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20560,6 +20573,7 @@ const COLLECTION_DATA = [
 		title: 'Dress-up',
 		routeName: 'dress-up',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20567,6 +20581,7 @@ const COLLECTION_DATA = [
 		title: 'Headwear',
 		routeName: 'headwear',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20574,6 +20589,7 @@ const COLLECTION_DATA = [
 		title: 'Accessories',
 		routeName: 'accessories',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20581,6 +20597,7 @@ const COLLECTION_DATA = [
 		title: 'Socks',
 		routeName: 'socks',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20588,6 +20605,7 @@ const COLLECTION_DATA = [
 		title: 'Shoes',
 		routeName: 'shoes',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20595,6 +20613,7 @@ const COLLECTION_DATA = [
 		title: 'Bags',
 		routeName: 'bags',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20602,6 +20621,7 @@ const COLLECTION_DATA = [
 		title: 'Umbrellas',
 		routeName: 'rugs',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20609,6 +20629,7 @@ const COLLECTION_DATA = [
 		title: 'Clothing Other',
 		routeName: 'clothing other',
 		category: 'catalog',
+		subcategory: 'clothing',
 		list: []
 	},
 	{
@@ -20616,6 +20637,7 @@ const COLLECTION_DATA = [
 		title: 'Recipes',
 		routeName: 'recipes',
 		category: 'catalog',
+		subcategory: 'recipes',
 		list: []
 	},
 	{
@@ -20623,6 +20645,7 @@ const COLLECTION_DATA = [
 		title: 'Other',
 		routeName: 'other',
 		category: 'catalog',
+		subcategory: 'other',
 		list: []
 	},
 	{
@@ -20630,6 +20653,7 @@ const COLLECTION_DATA = [
 		title: 'Construction',
 		routeName: 'construction',
 		category: 'catalog',
+		subcategory: 'tools',
 		list: []
 	},
 	{
@@ -20637,6 +20661,7 @@ const COLLECTION_DATA = [
 		title: 'Achievements',
 		routeName: 'achievements',
 		category: 'catalog',
+		subcategory: 'char',
 		list: []
 	},
 	{
@@ -20644,6 +20669,7 @@ const COLLECTION_DATA = [
 		title: 'Special NPCs',
 		routeName: 'special npcs',
 		category: 'catalog',
+		subcategory: 'characters',
 		list: []
 	},
 	{
@@ -20651,6 +20677,7 @@ const COLLECTION_DATA = [
 		title: 'Reactions',
 		routeName: 'reactions',
 		category: 'catalog',
+		subcategory: 'char',
 		list: []
 	}
 

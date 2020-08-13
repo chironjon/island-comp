@@ -7,7 +7,7 @@ import './App.css';
 import Info from './components/info/info.component';
 import HomePage from './pages/homepage/homepage.component';
 import CatalogPage from './pages/catalogpage/catalogpage.component';
-import Collections from './pages/collection/collection.component';
+import Critterpedia from './pages/critterpedia/critterpedia.component';
 import VillagerPage from './pages/villagerpage/villagerpage.component';
 import JournalPage from './pages/journalpage/journalpage.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
@@ -51,7 +51,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/island-comp' component={HomePage} />
           <Route path='/island-comp/catalog' component={CatalogPage} />
-          <Route path='/island-comp/collections' component={Collections} {...collection}/>
+          <Route path='/island-comp/critterpedia' component={Critterpedia} {...collection}/>
           <Route path='/island-comp/villagers' component={VillagerPage} />
           <Route path='/island-comp/journal' component={JournalPage} />
           <Route 
