@@ -4,16 +4,16 @@ import { connect } from 'react-redux';
 import InfoContent from '../info-content/info-content.component';
 import CustomButton from '../custom-button/custom-button.component';
 
-import { toggleInfoHidden } from '../../redux/info/info.actions';
+import { toggleInfoHidden, removeItemInfo } from '../../redux/info/info.actions';
 
 import './info.styles.scss';
 
-const Info = ({ toggleInfoHidden }) => (
+const Info = ({ toggleInfoHidden, removeItemInfo }) => (
 
       <div className='info-container'>
         <div className='info-content-container'>
           <InfoContent/>
-          <CustomButton onClick={toggleInfoHidden}>Close</CustomButton>  
+          <CustomButton onClick={() => {toggleInfoHidden();removeItemInfo();}}>Close</CustomButton>  
         </div>
       </div>
   )
@@ -21,7 +21,8 @@ const Info = ({ toggleInfoHidden }) => (
   
 
   const mapDispatchToProps = dispatch => ({
-    toggleInfoHidden: () => dispatch(toggleInfoHidden())
+    toggleInfoHidden: () => dispatch(toggleInfoHidden()),
+    removeItemInfo: () => dispatch(removeItemInfo())
   })
   
   export default connect(

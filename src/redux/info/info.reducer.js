@@ -19,7 +19,8 @@ const infoReducer = (state = INITIAL_STATE, action) => {
       }
     case InfoActionTypes.REMOVE_ITEM:
       return {
-        state: INITIAL_STATE
+        ...state,
+        currentInfoItem: []
       }
       default:
         return state;

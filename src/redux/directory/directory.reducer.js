@@ -14,12 +14,12 @@ const INITIAL_STATE = {
       linkUrl: '/catalog'
     },
     {
-      title: 'journal',
-      subtitle: 'coming soon',
-      imageUrl: journal,
+      title: 'critterpedia',
+      subtitle: '',
+      imageUrl: critterpedia,
       id: 2,
       size: 'box',
-      linkUrl: '/journal'
+      linkUrl: '/critterpedia'
     },
     {
       title: 'villagers',
@@ -30,12 +30,12 @@ const INITIAL_STATE = {
       linkUrl: '/villagers'
     },
     {
-      title: 'critterpedia',
-      subtitle: '',
-      imageUrl: critterpedia,
+      title: 'journal',
+      subtitle: 'coming soon',
+      imageUrl: journal,
       id: 4,
       size: 'box',
-      linkUrl: '/critterpedia'
+      linkUrl: '/journal'
     }
   ]
 };

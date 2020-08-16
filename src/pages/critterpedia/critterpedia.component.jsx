@@ -4,6 +4,7 @@ import { createStructuredSelector } from 'reselect';
 
 import './critterpedia.styles.scss';
 
+import UserInput from '../../components/user-input/user-input.component';
 import Scroll from '../../components/scroll/scroll.component';
 import CollectionPreview from '../../components/collection-preview/collection-preview.component';
 
@@ -14,6 +15,8 @@ const Critterpedia = ({collections}) => (
   //dropbox component choose lvl1 section
   //if lvl2 section.length < 1 just title if > 1 show dropbox
   //creature category has time selector component
+  <div>
+  <UserInput />
   <div className='collection'>
     <Scroll>
       { collections.map(({title, category, subcategory, list}, j) => (
@@ -28,6 +31,7 @@ const Critterpedia = ({collections}) => (
         </div>
       ))}
     </Scroll>
+  </div>
   </div>
 );
 

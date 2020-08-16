@@ -16,12 +16,11 @@ function capital_letter(str)
 
 const InfoContent = ({currentInfoItem, hemi}) => {
 	hemi = "NH";
-	console.log(currentInfoItem, hemi)
 	return(
 	<div className="item-info-content">
 		<div className="card">
 			<div className="type">
-				<p>{currentInfoItem[0]["Type"]/* === "insect" ? <img className="typeImg" src={`https://acnhcdn.com/latest/FtrIcon/ToolNetPattern_Remake_7_0.png`} alt="typeimg"/>: <p></p>*/}</p>
+				<p>{currentInfoItem[0]["Type"]}</p>
 			</div>
 			<div className="item-name-container">
 			<p>{capital_letter(currentInfoItem[0]["Name"])}</p>
