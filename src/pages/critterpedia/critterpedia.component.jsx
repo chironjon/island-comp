@@ -1,42 +1,50 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-
-import './critterpedia.styles.scss';
 
 import UserInput from '../../components/user-input/user-input.component';
 import Scroll from '../../components/scroll/scroll.component';
-import CollectionPreview from '../../components/collection-preview/collection-preview.component';
+import ItemsDisplay from '../../components/items-display/items-display.component';
 
-import {selectCollections} from '../../redux/collection/collection.selectors';
+import './critterpedia.styles.scss';
 
-const Critterpedia = ({collections}) => (
-  //section headers here
-  //dropbox component choose lvl1 section
-  //if lvl2 section.length < 1 just title if > 1 show dropbox
-  //creature category has time selector component
+const Critterpedia = ({collections}) => {
+  const itemsObj = [];
+  Object.values(collections).forEach(({id, category, items}) => {
+    if(category === 'collections') {
+      items.map(x => itemsObj.push({
+        "type": id,
+        "item": x
+      }))
+    }
+  })
+  console.log("critterpedia")
+  //const listFilter = items.filter(critter =>
+  //  listType === "All" ? critter : critter["Type"].includes(listType)
+  //) if listType is all, return all critters, if not return critters w/ that listType
+  //.filter(critter =>
+  //  listTime === "Year" ? critter : critter[monthCheck] !== "NA"
+  //)if listTime is year return all critters, if not return critters that match current month
+  //.filter(critter =>
+  //  listTime === "Hour" ? critter[time.hour] === "TRUE" : critter
+  //) if listTime is hour return all critters with matching hour input, if not just return all
+  //.filter(critter =>
+  //  listTime === "Now" ? critter[time.hour] === "TRUE" : critter
+  //)
+  
+  return (
+
   <div>
-  <UserInput />
-  <div className='collection'>
-    <Scroll>
-      { collections.map(({title, category, subcategory, list}, j) => (
-        <div key={j}>
-          { category === 'collections' 
-            ? <div>
-                <div className='title'>{title}</div>          
-                <CollectionPreview list={list} />
-              </div>
-            : null 
-          }
-        </div>
-      ))}
-    </Scroll>
+    <UserInput />
+    <div className='collection'>
+      <Scroll>
+        <ItemsDisplay items={itemsObj} />
+      </Scroll>
+    </div>
   </div>
-  </div>
-);
+)};
 
-const mapStateToProps = createStructuredSelector({
-  collections: selectCollections
+const mapStateToProps = ({ collection: { collections } }) => ({
+  collections
 })
 
 export default connect(mapStateToProps)(Critterpedia);

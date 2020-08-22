@@ -15,7 +15,7 @@ const infoReducer = (state = INITIAL_STATE, action) => {
     case InfoActionTypes.ADD_ITEM:
       return {
         ...state,
-        currentInfoItem: [action.payload]
+        currentInfoItem: action.payload
       }
     case InfoActionTypes.REMOVE_ITEM:
       return {

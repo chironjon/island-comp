@@ -1,43 +1,41 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Dropbox from '../dropbox/dropbox.component';
 
+import { changeTime, changeMonth } from '../../redux/input/input.actions';
+
 import './time-input.styles.scss'
 
-const options = [
-  '12am',
-  '1am',
-  '2am',
-  '3am',
-  '4am',
-  '5am',
-  '6am',
-  '7am',
-  '8am',
-  '9am',
-  '10am',
-  '11am',
-  '12pm',
-  '1pm',
-  '2pm',
-  '3pm',
-  '4pm',
-  '5pm',
-  '6pm',
-  '7pm',
-  '8pm',
-  '9pm',
-  '10pm',
-  '11pm'
-  ]
+const hours = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"]
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
 
-function timeChange (e) {
-  console.log(e.target.value);
-  return null;
-}
-
-const TimeInput = (props) => (
-  <Dropbox name='time' change={timeChange} options={options}/>
+const TimeInput = ({changeTime, changeMonth, listTime, hour, month}) => (
+  <div className='time-input-container'>
+    { 
+      listTime === "by month" ?
+      <Dropbox name='month' change={changeMonth} options={months}/>
+      : listTime === "by hour" ?
+        <div>
+          <Dropbox name='month' change={changeMonth} options={months}/>
+          <Dropbox name='time' change={changeTime} options={hours}/>
+        </div>
+      : listTime === "now" ?
+      <div>{month} {hour}hr</div>
+      : <span>nothing</span>
+    }
+  </div>
 )
 
-export default TimeInput;
+const mapStateToProps = ({ input: { listTime, hour, month } }) => ({
+  listTime,
+  hour,
+  month
+})
+
+const mapDispatchToProps = dispatch => ({
+  changeTime: item => dispatch(changeTime(item.target.value)),
+  changeMonth: item => dispatch(changeMonth(item.target.value))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(TimeInput);

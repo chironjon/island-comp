@@ -8,17 +8,27 @@ import { toggleInfoHidden, removeItemInfo } from '../../redux/info/info.actions'
 
 import './info.styles.scss';
 
-const Info = ({ toggleInfoHidden, removeItemInfo }) => (
-
-      <div className='info-container'>
+const Info = ({ toggleInfoHidden, removeItemInfo, currentInfoItem, hemi, hidden }) => {
+  console.log('info')
+  return(
+  <div>
+      { !hidden
+        ? <div className='info-container'>
         <div className='info-content-container'>
-          <InfoContent/>
+          <InfoContent currentItem={currentInfoItem} hemi={hemi}/>
           <CustomButton onClick={() => {toggleInfoHidden();removeItemInfo();}}>Close</CustomButton>  
         </div>
       </div>
-  )
+        : null
+    }
+    </div>
+  )}
   
-  
+  const mapStateToProps = ({ info: { currentInfoItem, hidden }, input: { hemi } }) => ({
+    currentInfoItem,
+    hidden,
+    hemi
+  })
 
   const mapDispatchToProps = dispatch => ({
     toggleInfoHidden: () => dispatch(toggleInfoHidden()),
@@ -26,6 +36,6 @@ const Info = ({ toggleInfoHidden, removeItemInfo }) => (
   })
   
   export default connect(
-    null,
+    mapStateToProps,
     mapDispatchToProps
   )(Info);

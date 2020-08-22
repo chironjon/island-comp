@@ -1,6 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Dropbox from '../dropbox/dropbox.component';
+
+import { changeListType } from '../../redux/input/input.actions';
 
 import './list-type-input.styles.scss'
 
@@ -11,13 +14,12 @@ const options = [
     'sea'
   ]
 
-function listTypeChange (e) {
-  console.log(e.target.value);
-  return null;
-}
-
-const ListTypeInput = (props) => (
-  <Dropbox name='list' change={listTypeChange} options={options}/>
+const ListTypeInput = ({changeListType}) => (
+  <Dropbox name='list' change={changeListType} options={options}/>
 )
 
-export default ListTypeInput;
+const mapDispatchToProps = dispatch => ({
+  changeListType: item => dispatch(changeListType(item.target.value))
+})
+
+export default connect(null, mapDispatchToProps)(ListTypeInput);

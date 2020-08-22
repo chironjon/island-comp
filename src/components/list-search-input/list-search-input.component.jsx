@@ -1,16 +1,18 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import SearchBox from '../search-box/search-box.component';
 
+import { changeSearchField } from '../../redux/input/input.actions';
+
 import './list-search-input.styles.scss'
 
-function collectionSearchChange (e) {
-  console.log(e.target.value);
-  return null;
-}
-
-const ListSearchInput = (props) => (
-  <SearchBox onSearchChange={collectionSearchChange} placeholder='Search??'/>
+const ListSearchInput = ({ changeSearchField }) => (
+  <SearchBox onChange={changeSearchField} placeholder='Search??'/>
 )
 
-export default ListSearchInput;
+const mapDispacthToProps = dispatch => ({
+  changeSearchField: item => dispatch(changeSearchField(item.target.value))
+})
+
+export default connect(null, mapDispacthToProps)(ListSearchInput);

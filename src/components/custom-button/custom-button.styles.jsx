@@ -47,11 +47,11 @@ const getButtonStyles = props => {
 
 export const CustomButtonContainer = styled.button`
   
-  width: auto; /* from video */
-  height: 50px;
+   /* from video */
+
   letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px 0 35px;
+
+  padding: 2px 5px 2px 5px;
   font-size: 14px;
   background-color: #067d9e;
   color: #8bfffb;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import './App.css';
 
@@ -16,6 +17,8 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 
 import collection from './redux/collection/collection.data.js';
+import { selectCurrentUser } from './redux/user/user.selectors';
+import { selectInfoHidden } from './redux/info/info.selectors';
 
 
 class App extends React.Component {
@@ -66,16 +69,15 @@ class App extends React.Component {
             } 
           />
         </Switch>
-        { this.props.hidden ? null : <Info /> }
+        <Info />
       </div>
     );
   }
 }
 
-const mapStateToProps = ({ user: { currentUser }, info: { hidden, currentInfoItem } }) => ({
-  currentUser,
-  currentInfoItem,
-  hidden
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+  hidden: selectInfoHidden
 })
 
 const mapDispatchToProps = dispatch => ({

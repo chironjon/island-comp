@@ -1,0 +1,16 @@
+.input-container {
+  //border: 2px solid yellow;
+  //div {border: 2px solid yellow;}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .detail-container {
+    display: flex;
+    
+  }
+  .sort-order-container {
+    width: 100%;
+  }
+  
+}
