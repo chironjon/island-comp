@@ -11,7 +11,7 @@ import { selectCollections } from '../../redux/collection/collection.selectors';
 import './catalogpage.styles.scss';
 
 const CatalogPage = ({collections}) => {
-  console.log('catalog')
+  //console.log('catalog')
   return (
   <div>
   <h1>!UNDER CONSTRUCTION!</h1>

@@ -31,3 +31,13 @@ export const selectSearchField = createSelector(
   [selectInput],
   input => input.searchField
 );
+
+export const selectSort = createSelector(
+  [selectInput],
+  input => input.sortBy
+);
+
+export const selectOrder = createSelector(
+  [selectInput],
+  input => input.order
+);

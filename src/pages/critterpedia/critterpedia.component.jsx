@@ -16,11 +16,37 @@ const Critterpedia = ({collections}) => {
     if(category === 'collections') {
       items.map(x => itemsObj.push({
         "type": id,
-        "item": x
+        "item": x,
+        "time": {
+          "12 AM": false,
+          "1 AM": false,
+          "2 AM": false,
+          "3 AM": false,
+          "4 AM": false,
+          "5 AM": false,
+          "6 AM": false,
+          "7 AM": false,
+          "8 AM": false,
+          "9 AM": false,
+          "10 AM": false,
+          "11 AM": false,
+          "12 PM": false,
+          "1 PM": false,
+          "2 PM": false,
+          "3 PM": false,
+          "4 PM": false,
+          "5 PM": false,
+          "6 PM": false,
+          "7 PM": false,
+          "8 PM": false,
+          "9 PM": false,
+          "10 PM": false,
+          "11 PM": false
+        }
       }))
     }
   })
-  console.log("critterpedia")
+  //console.log("critterpedia")
   //const listFilter = items.filter(critter =>
   //  listType === "All" ? critter : critter["Type"].includes(listType)
   //) if listType is all, return all critters, if not return critters w/ that listType

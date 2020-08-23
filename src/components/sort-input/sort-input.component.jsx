@@ -8,12 +8,13 @@ import {changeSort, changeOrder} from '../../redux/input/input.actions';
 import './sort-input.styles.scss'
 
 const sortOptions = [
+  'list',
   'name',
   'sell'
 ]
 const orderOptions = [
-  'inc',
-  'desc'
+  'desc',
+  'inc'
 ]
 const SortInput = ({changeSort, changeOrder}) => (
   <div className='drop-container'>

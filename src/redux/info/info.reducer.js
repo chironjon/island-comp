@@ -2,7 +2,7 @@ import InfoActionTypes from './info.types';
 
 const INITIAL_STATE = {
   hidden: true,
-  currentInfoItem: []
+  currentInfoItem: {}
 };
 
 const infoReducer = (state = INITIAL_STATE, action) => {
@@ -20,7 +20,13 @@ const infoReducer = (state = INITIAL_STATE, action) => {
     case InfoActionTypes.REMOVE_ITEM:
       return {
         ...state,
-        currentInfoItem: []
+        currentInfoItem: {},
+
+      }
+    case InfoActionTypes.ADD_TIME_OBJ:
+      return {
+        ...state,
+        
       }
       default:
         return state;

@@ -1,6 +1,10 @@
 import InputActionTypes from './input.types';
 
-const hours = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"]
+const hours = [
+  '12 AM', '1 AM', '2 AM', '3 AM', '4 AM', '5 AM', '6 AM', '7 AM',
+   '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM', '3 PM',
+    '4 PM', '5 PM', '6 PM', '7 PM', '8 PM', '9 PM', '10 PM', '11 PM'
+]
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
 let today = new Date();
 let curMon = today.getMonth();
@@ -13,8 +17,8 @@ const INITIAL_STATE = {
   month: months[curMon],
   hour: hours[curTime],
   hemi: 'NH',
-  sortBy: 'name',
-  order: 'inc'
+  sortBy: 'list',
+  order: 'desc'
 };
 
 const inputReducer = (state = INITIAL_STATE, action) => {

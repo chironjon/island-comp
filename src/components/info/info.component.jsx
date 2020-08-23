@@ -6,19 +6,19 @@ import InfoContent from '../info-content/info-content.component';
 import CustomButton from '../custom-button/custom-button.component';
 
 import { toggleInfoHidden, removeItemInfo } from '../../redux/info/info.actions';
-import { selectInfoHidden, selectCurrentInfoItem } from '../../redux/info/info.selectors';
+import { selectInfoHidden } from '../../redux/info/info.selectors';
 import { selectHemi } from '../../redux/input/input.selectors';
 
 import './info.styles.scss';
 
-const Info = ({ toggleInfoHidden, removeItemInfo, currentInfoItem, hemi, hidden }) => {
-  console.log('info')
+const Info = ({ toggleInfoHidden, removeItemInfo, hemi, hidden }) => {
+  //console.log('info')
   return(
   <div>
       { !hidden
         ? <div className='info-container'>
         <div className='info-content-container'>
-          <InfoContent currentItem={currentInfoItem} hemi={hemi}/>
+          <InfoContent hemi={hemi}/>
           <CustomButton onClick={() => {toggleInfoHidden();removeItemInfo();}}>Close</CustomButton>  
         </div>
       </div>
@@ -28,7 +28,6 @@ const Info = ({ toggleInfoHidden, removeItemInfo, currentInfoItem, hemi, hidden 
   )}
   
   const mapStateToProps = createStructuredSelector({
-    currentInfoItem: selectCurrentInfoItem,
     hidden: selectInfoHidden,
     hemi: selectHemi
   })

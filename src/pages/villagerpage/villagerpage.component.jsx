@@ -11,7 +11,7 @@ import {selectCollections} from '../../redux/collection/collection.selectors';
 import './villagerpage.styles.scss';
 
 const VillagerPage = ({collections}) => {
-  console.log('villager')
+  //console.log('villager')
   return (
   <div>
   <h1>!UNDER CONSTRUCTION!</h1>

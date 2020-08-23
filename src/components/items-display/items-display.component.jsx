@@ -4,51 +4,15 @@ import { createStructuredSelector } from 'reselect';
 
 import CollectionItem from '../collection-item/collection-item.component';
 
-import { selectSearchField, selectListType, selectListTime, selectMonth, selectHour, selectHemi } from '../../redux/input/input.selectors';
+import { selectSearchField, selectListType, selectListTime, selectMonth, selectHour, selectHemi, selectSort, selectOrder } from '../../redux/input/input.selectors';
 
 import './items-display.styles.scss';
 
-const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month}) => {
+const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month, sortBy, order}) => {
   const monthCheck = hemi + " " + month
-  console.log(monthCheck)
-  // const sortArr = items.sort((a, b) => {
-  //   switch (sortBy.char) {
-  //     case 'name':
-  //       var nameA = a["Name"].toUpperCase();
-  //       var nameB = b["Name"].toUpperCase();
-  //       if (sortBy.order === "des") {
-  //         if (nameA < nameB) {
-  //           return -1;
-  //         }
-  //         if (nameA > nameB) {
-  //           return 1;
-  //         }
-  //       } else if (sortBy.order === "asc") {
-  //         if (nameA > nameB) {
-  //           return -1;
-  //         }
-  //         if (nameA < nameB) {
-  //           return 1;
-  //         }
-  //       }
-  //       return 0;
-  //       break;
-  //     case 'price':
-  //       if(sortBy.order === "des"){
-  //         return b["Sell"] - a["Sell"];
-  //       } else if (sortBy.order === "asc"){
-  //         return a["Sell"] - b["Sell"]
-  //       }
-  //       break;
-  //     // case 'shadow':
-  //     //   break;
-  //     // case 'rarity':
-  //     //   return b["Spawn Rate"] - a["Spawn Rate"];
-  //     //   break;
-  //     case 'list':
-  //       return true;
-  //   }
-  // });
+  const hourCheck = '';
+  //console.log(monthCheck)
+
   const filterItems = items
   .filter(({item, type}) =>
     listType === "all" ? item : type.includes(listType)
@@ -56,8 +20,8 @@ const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month
   .filter(({item}) =>
     listTime === "all year" ? item : item[monthCheck] !== "NA"
   )//if listTime is year return all critters, if not return critters that match current month
-  .filter(({item}) =>
-    listTime === "hour" ? null : item
+  .filter(({item, time}) =>
+    listTime === "by hour" ? item : item
   )// if listTime is hour return all critters with matching hour input, if not just return all
   // .filter(critter =>
   //   listTime === "now" ? critter[time.hour] === "TRUE" : critter
@@ -67,12 +31,50 @@ const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month
       .toLowerCase()
       .includes(searchField.toLowerCase())
   )
+  const sortedItems = filterItems.sort((a, b) => {
+    switch (sortBy) {
+      case 'name':
+        var nameA = a.item["Name"].toUpperCase();
+        var nameB = b.item["Name"].toUpperCase();
+        if (order === "desc") {
+          if (nameA < nameB) {
+            return -1;
+          }
+          if (nameA > nameB) {
+            return 1;
+          }
+        } else if (order === "inc") {
+          if (nameA > nameB) {
+            return -1;
+          }
+          if (nameA < nameB) {
+            return 1;
+          }
+        }
+        break;
+      case 'sell':
+        if(order === "desc"){
+          return b.item["Sell"] - a.item["Sell"];
+        } else if (order === "inc"){
+          return a.item["Sell"] - b.item["Sell"]
+        }
+        break;
+      // case 'shadow':
+      //   break;
+      // case 'rarity':
+      //   return b["Spawn Rate"] - a["Spawn Rate"];
+      //   break;
+      case 'list':
+        return null;
+    }
+  });
+  console.log(sortedItems)
   return(
   <div className='collection'>
       { 
-        filterItems
-        .map(({type, item}, y) => (
-          <CollectionItem key={y} type={type} item={item} />
+        sortedItems
+        .map(({type, item, time}, y) => (
+          <CollectionItem key={y} type={type} item={item} time={time} />
         ))
       }
   </div>
@@ -84,7 +86,9 @@ const mapStateToProps = createStructuredSelector({
   listTime: selectListTime,
   hemi: selectHemi,
   hour: selectHour,
-  month: selectMonth
+  month: selectMonth,
+  sortBy: selectSort,
+  order: selectOrder
 })
 
 export default connect(mapStateToProps)(ItemsDisplay);
