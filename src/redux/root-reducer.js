@@ -9,7 +9,7 @@ import inputReducer from './input/input.reducer';
 export default combineReducers({
   user: userReducer,
   directory: directoryReducer,
-  collection: collectionReducer,
+  collections: collectionReducer,
   info: infoReducer,
   input: inputReducer
 })

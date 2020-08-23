@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import Dropbox from '../dropbox/dropbox.component';
 
 import { changeTime, changeMonth } from '../../redux/input/input.actions';
+import { selectListTime, selectHour, selectMonth } from '../../redux/input/input.selectors';
 
 import './time-input.styles.scss'
 
@@ -27,10 +29,10 @@ const TimeInput = ({changeTime, changeMonth, listTime, hour, month}) => (
   </div>
 )
 
-const mapStateToProps = ({ input: { listTime, hour, month } }) => ({
-  listTime,
-  hour,
-  month
+const mapStateToProps = createStructuredSelector({
+  listTime: selectListTime,
+  hour: selectHour,
+  month: selectMonth
 })
 
 const mapDispatchToProps = dispatch => ({

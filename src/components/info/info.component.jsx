@@ -1,10 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import InfoContent from '../info-content/info-content.component';
 import CustomButton from '../custom-button/custom-button.component';
 
 import { toggleInfoHidden, removeItemInfo } from '../../redux/info/info.actions';
+import { selectInfoHidden, selectCurrentInfoItem } from '../../redux/info/info.selectors';
+import { selectHemi } from '../../redux/input/input.selectors';
 
 import './info.styles.scss';
 
@@ -24,10 +27,10 @@ const Info = ({ toggleInfoHidden, removeItemInfo, currentInfoItem, hemi, hidden 
     </div>
   )}
   
-  const mapStateToProps = ({ info: { currentInfoItem, hidden }, input: { hemi } }) => ({
-    currentInfoItem,
-    hidden,
-    hemi
+  const mapStateToProps = createStructuredSelector({
+    currentInfoItem: selectCurrentInfoItem,
+    hidden: selectInfoHidden,
+    hemi: selectHemi
   })
 
   const mapDispatchToProps = dispatch => ({

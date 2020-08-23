@@ -1,11 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
-import './catalogpage.styles.scss';
+import { createStructuredSelector } from 'reselect';
 
 import UserInput from '../../components/user-input/user-input.component';
 import Scroll from '../../components/scroll/scroll.component';
 import ItemsDisplay from '../../components/items-display/items-display.component';
+
+import { selectCollections } from '../../redux/collection/collection.selectors';
+
+import './catalogpage.styles.scss';
 
 const CatalogPage = ({collections}) => {
   console.log('catalog')
@@ -32,8 +35,8 @@ const CatalogPage = ({collections}) => {
   </div>
 )}
 
-const mapStateToProps = ({ collection: { collections } }) => ({
-  collections
+const mapStateToProps = createStructuredSelector({
+  collections: selectCollections
 })
 
 export default connect(mapStateToProps)(CatalogPage);

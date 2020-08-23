@@ -1,11 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
-import './villagerpage.styles.scss';
+import { createStructuredSelector } from 'reselect';
 
 import UserInput from '../../components/user-input/user-input.component';
 import Scroll from '../../components/scroll/scroll.component';
 import ItemsDisplay from '../../components/items-display/items-display.component';
+
+import {selectCollections} from '../../redux/collection/collection.selectors';
+
+import './villagerpage.styles.scss';
 
 const VillagerPage = ({collections}) => {
   console.log('villager')
@@ -32,8 +35,8 @@ const VillagerPage = ({collections}) => {
   </div>
 )}
 
-const mapStateToProps = ({ collection: { collections } }) => ({
-  collections
+const mapStateToProps = createStructuredSelector({
+  collections: selectCollections
 })
 
 export default connect(mapStateToProps)(VillagerPage);

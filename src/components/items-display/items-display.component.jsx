@@ -1,7 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import CollectionItem from '../collection-item/collection-item.component';
+
+import { selectSearchField, selectListType, selectListTime, selectMonth, selectHour, selectHemi } from '../../redux/input/input.selectors';
 
 import './items-display.styles.scss';
 
@@ -75,13 +78,13 @@ const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month
   </div>
 )}
 
-const mapStateToProps = ({ input: { searchField, listType, listTime, hemi, hour, month } }) => ({
-  searchField,
-  listType,
-  listTime,
-  hemi,
-  hour,
-  month
+const mapStateToProps = createStructuredSelector({
+  searchField: selectSearchField,
+  listType: selectListType,
+  listTime: selectListTime,
+  hemi: selectHemi,
+  hour: selectHour,
+  month: selectMonth
 })
 
 export default connect(mapStateToProps)(ItemsDisplay);

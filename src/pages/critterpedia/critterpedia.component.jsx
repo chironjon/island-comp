@@ -1,9 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import UserInput from '../../components/user-input/user-input.component';
 import Scroll from '../../components/scroll/scroll.component';
 import ItemsDisplay from '../../components/items-display/items-display.component';
+
+import { selectCollections } from '../../redux/collection/collection.selectors';
 
 import './critterpedia.styles.scss';
 
@@ -43,8 +46,8 @@ const Critterpedia = ({collections}) => {
   </div>
 )};
 
-const mapStateToProps = ({ collection: { collections } }) => ({
-  collections
+const mapStateToProps = createStructuredSelector({
+  collections: selectCollections
 })
 
 export default connect(mapStateToProps)(Critterpedia);

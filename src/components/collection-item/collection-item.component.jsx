@@ -1,9 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import Emoji from '../emoji/emoji.component';
 
 import { toggleInfoHidden, addItemInfo } from '../../redux/info/info.actions';
+import { selectHemi, selectMonth } from '../../redux/input/input.selectors';
 
 import './collection-item.styles.scss';
 
@@ -35,8 +37,8 @@ function capital_letter(str)
 
 //console.log(index)
 const CollectionItem = ({item, toggleInfoHidden, addItemInfo, type, hemi, month}) => {
-  const hemiStr = hemi
-  const testString = hemiStr + ' ' + month;
+  
+  const monthCheck = hemi + ' ' + month;
   //*************
   let valueArr = [];
   let timeArr = []
@@ -44,7 +46,7 @@ const CollectionItem = ({item, toggleInfoHidden, addItemInfo, type, hemi, month}
   const monthReg = /([NS]H [A,J,F,M,S,O,N,D][a,e,p,u,c,o][n,b,r,y,n,l,g,p,t,v,c])/;
   const timeReg = /(\d{1,2}\s[AP]M\s–\s\d{1,2}\s[AP]M)|(All day)/g;
   
-  Object.entries(item).forEach(x => {
+  Object.entries(item).forEach(x => { // object of 24 months availability in ex: "NH Jan": "8 AM – 5 PM" format
     return monthReg.test(x[0]) ? timeObj[x[0]] = x[1] : null
   })
       console.log(timeObj)
@@ -57,7 +59,6 @@ const CollectionItem = ({item, toggleInfoHidden, addItemInfo, type, hemi, month}
   console.log(timeArr.flat())
 
   //*************
-  //console.log(item[testString])
   return (
   <div className='collection-item' >
   
@@ -67,7 +68,7 @@ const CollectionItem = ({item, toggleInfoHidden, addItemInfo, type, hemi, month}
           <div className='image' style={{backgroundImage: `url(https://acnhcdn.com/latest/MenuIcon/${item["Icon Filename"]}.png)`}}/>
           <div className='collection-footer'>
             { type !== "insects" ? <span className='where'>{item["Where/How"]}</span> : null }
-            <span className='time'>{item[testString]}</span>
+            <span className='time'>{timeObj[monthCheck]}</span>
             <span className='price'>{item["Sell"]}</span>
           </div>
         </div>
@@ -77,9 +78,9 @@ const CollectionItem = ({item, toggleInfoHidden, addItemInfo, type, hemi, month}
   </div>
 )};
 
-const mapStateToProps = ({ input: { hemi, month } }) => ({
-  hemi,
-  month
+const mapStateToProps = createStructuredSelector({
+  hemi: selectHemi,
+  month: selectMonth
 })
 
 const mapDispatchToProps = dispatch => ({
