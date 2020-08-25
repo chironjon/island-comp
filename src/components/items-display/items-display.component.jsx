@@ -8,12 +8,10 @@ import { selectSearchField, selectListType, selectListTime, selectMonth, selectH
 
 import './items-display.styles.scss';
 
-const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month, sortBy, order}) => {
-  const monthCheck = hemi + " " + month
-  const hourCheck = '';
-  //console.log(monthCheck)
-
-  const filterItems = items
+const ItemsDisplay = ({itemsObj, searchField, listType, listTime, hemi, hour, month, sortBy, order}) => {
+  const monthCheck = hemi + " " + month;
+  
+  const filterItems = Object.values(itemsObj)
   .filter(({item, type}) =>
     listType === "all" ? item : type.includes(listType)
   )
@@ -21,7 +19,7 @@ const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month
     listTime === "all year" ? item : item[monthCheck] !== "NA"
   )//if listTime is year return all critters, if not return critters that match current month
   .filter(({item, time}) =>
-    listTime === "by hour" ? item : item
+    listTime === "by hour" ? time[hour] !==  false : item
   )// if listTime is hour return all critters with matching hour input, if not just return all
   // .filter(critter =>
   //   listTime === "now" ? critter[time.hour] === "TRUE" : critter
@@ -65,16 +63,24 @@ const ItemsDisplay = ({items, searchField, listType, listTime, hemi, hour, month
       //   return b["Spawn Rate"] - a["Spawn Rate"];
       //   break;
       case 'list':
+        if(order === "inc"){
+          return b.item["#"] - a.item["#"];
+        } else if (order === "desc"){
+          return a.item["#"] - b.item["#"]
+        }
+        break;
+      default:
         return null;
     }
+    return null;
   });
-  console.log(sortedItems)
+  //console.log(sortedItems)
   return(
   <div className='collection'>
       { 
         sortedItems
-        .map(({type, item, time}, y) => (
-          <CollectionItem key={y} type={type} item={item} time={time} />
+        .map(({type, item, time, timesAvailAllYear, currentItemCurrentMonthAvail}, y) => (
+          <CollectionItem key={y} type={type} item={item} time={time} timesAvailAllYear={timesAvailAllYear} currentItemCurrentMonthAvail={currentItemCurrentMonthAvail} />
         ))
       }
   </div>

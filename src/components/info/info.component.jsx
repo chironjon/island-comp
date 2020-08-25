@@ -16,12 +16,16 @@ const Info = ({ toggleInfoHidden, removeItemInfo, hemi, hidden }) => {
   return(
   <div>
       { !hidden
-        ? <div className='info-container'>
-        <div className='info-content-container'>
-          <InfoContent hemi={hemi}/>
-          <CustomButton onClick={() => {toggleInfoHidden();removeItemInfo();}}>Close</CustomButton>  
+        ? 
+        <div className='info-container'>
+          
+          
+          <div className='info-content'>
+            <InfoContent hemi={hemi}/>
+            <CustomButton onClick={() => {toggleInfoHidden();removeItemInfo();}}>Close</CustomButton>  
+          </div>
+          
         </div>
-      </div>
         : null
     }
     </div>

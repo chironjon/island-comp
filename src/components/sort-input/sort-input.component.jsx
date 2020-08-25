@@ -8,6 +8,7 @@ import {changeSort, changeOrder} from '../../redux/input/input.actions';
 import './sort-input.styles.scss'
 
 const sortOptions = [
+  '(pick)',
   'list',
   'name',
   'sell'

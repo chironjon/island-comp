@@ -17,7 +17,7 @@ const INITIAL_STATE = {
   month: months[curMon],
   hour: hours[curTime],
   hemi: 'NH',
-  sortBy: 'list',
+  sortBy: '(pick)',
   order: 'desc'
 };
 
@@ -59,9 +59,22 @@ const inputReducer = (state = INITIAL_STATE, action) => {
         order: action.payload
       }
     case InputActionTypes.TIME_FRAME_CHANGE:
+      if (state.listTime === "now"){
+        return {
+          ...state,
+          listTime: action.payload
+        }
+      } else {
+        return {
+          ...state,
+          listTime: action.payload,
+          month: months[curMon],
+          hour: hours[curTime]
+        }
+      }
+    case InputActionTypes.RESET_TIME_INPUT:
       return {
-        ...state,
-        listTime: action.payload
+        state
       }
     default:
       return state;

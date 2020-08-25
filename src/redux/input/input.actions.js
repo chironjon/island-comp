@@ -33,3 +33,6 @@ export const changeTimeFrame = item => ({
   type: InputActionTypes.TIME_FRAME_CHANGE,
   payload: item
 })
+export const resetTimeInput = () => ({
+  type: InputActionTypes.RESET_TIME_INPUT
+})

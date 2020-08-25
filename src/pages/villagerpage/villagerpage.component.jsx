@@ -4,7 +4,7 @@ import { createStructuredSelector } from 'reselect';
 
 import UserInput from '../../components/user-input/user-input.component';
 import Scroll from '../../components/scroll/scroll.component';
-import ItemsDisplay from '../../components/items-display/items-display.component';
+//import ItemsDisplay from '../../components/items-display/items-display.component';
 
 import {selectCollections} from '../../redux/collection/collection.selectors';
 

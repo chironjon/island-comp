@@ -5,6 +5,7 @@ import { createStructuredSelector } from 'reselect';
 import Dropbox from '../dropbox/dropbox.component';
 
 import { changeTime, changeMonth } from '../../redux/input/input.actions';
+import { resetTimeInput } from '../../redux/input/input.actions'
 import { selectListTime, selectHour, selectMonth } from '../../redux/input/input.selectors';
 
 import './time-input.styles.scss'
@@ -16,19 +17,29 @@ const hours = [
 ]
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
 
-const TimeInput = ({changeTime, changeMonth, listTime, hour, month}) => (
+const TimeInput = ({changeTime, changeMonth, resetTimeInput, listTime, hour, month}) => (
   <div className='time-input-container'>
     { 
       listTime === "by month" ?
-      <Dropbox name='month' change={changeMonth} options={months}/>
+        <div>
+          <p>{month}</p>
+          <label forhtml="month">Month: </label>
+          <Dropbox name='month' change={changeMonth} options={months}/>
+        </div>
       : listTime === "by hour" ?
         <div>
+          <p>{hour} in {month}</p>
+          <label forhtml="month">Month: </label>
           <Dropbox name='month' change={changeMonth} options={months}/>
+          <br/>
+          <label forhtml="hour">Hour: </label> 
           <Dropbox name='time' change={changeTime} options={hours}/>
         </div>
       : listTime === "now" ?
-      <div>{month} {hour}hr</div>
-      : <span>nothing</span>
+        <div>
+        <p>{hour} in {month}</p>
+        </div>
+      : <span>All year</span>
     }
   </div>
 )
@@ -41,7 +52,8 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = dispatch => ({
   changeTime: item => dispatch(changeTime(item.target.value)),
-  changeMonth: item => dispatch(changeMonth(item.target.value))
+  changeMonth: item => dispatch(changeMonth(item.target.value)),
+  resetTimeInput: () => dispatch(resetTimeInput())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(TimeInput);

@@ -4,7 +4,8 @@ const COLLECTION_DATA = {
 		"title": 'Insects',
 		"category": 'collections',
 		"subcategory": 'critters',
-		"items": [{
+		"items": [
+			{
 			"#": 10,
 			"Name": "agrias butterfly",
 			"Sell": 3000,
@@ -3612,7 +3613,8 @@ const COLLECTION_DATA = {
 		"title": 'Fish',
 		"category": 'collections',
 		"subcategory": 'critters',
-		"items": [{
+		"items": [
+			{
 			"#": 56,
 			"Name": "anchovy",
 			"Sell": 200,
@@ -7460,7 +7462,8 @@ const COLLECTION_DATA = {
 		"title": 'Sea Creatures',
 		"category": 'collections',
 		"subcategory": 'critters',
-		"items": [{
+		"items": [
+			{
 			"#": 17,
 			"Name": "abalone",
 			"Sell": 2000,
