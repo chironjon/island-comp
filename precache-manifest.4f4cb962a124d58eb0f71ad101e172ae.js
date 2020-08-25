@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21659e6de5a06f66537638d263d50ff6",
+    "revision": "50bd38822c96541846d482bcee4cdc36",
     "url": "/island-comp/index.html"
   },
   {
