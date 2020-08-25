@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/island-comp/precache-manifest.b0c350bd84276b2d36135f5d4899a22c.js"
+  "/island-comp/precache-manifest.e5bf153c19b1f0e352ea985caa67da18.js"
 );
 
 self.addEventListener('message', (event) => {
