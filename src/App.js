@@ -18,7 +18,6 @@ import { setCurrentUser } from './redux/user/user.actions';
 
 import collection from './redux/collection/collection.data.js';
 import { selectCurrentUser } from './redux/user/user.selectors';
-import { selectInfoHidden } from './redux/info/info.selectors';
 
 
 class App extends React.Component {
@@ -76,8 +75,7 @@ class App extends React.Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
-  hidden: selectInfoHidden
+  currentUser: selectCurrentUser
 })
 
 const mapDispatchToProps = dispatch => ({

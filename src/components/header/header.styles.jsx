@@ -33,8 +33,8 @@ export const OptionLink = styled(Link)`
   font-size: 14px;
   padding: 10px 10px 5px 10px;
   cursor: pointer;
-  background-color: #0994ba;
-  border: 1px solid #70c4c7;
+  background-color: var(--secondary-one-norm);
+  border: 1px solid var(--secondary-one-light);
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 `

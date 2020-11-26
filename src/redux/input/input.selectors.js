@@ -12,9 +12,19 @@ export const selectMonth = createSelector(
   input => input.month
 );
 
+export const selectSecondMonth = createSelector(
+  [selectInput],
+  input => input.secondMonth
+);
+
 export const selectHour = createSelector(
   [selectInput],
   input => input.hour
+);
+
+export const selectSecondHour = createSelector(
+  [selectInput],
+  input => input.secondHour
 );
 
 export const selectListType = createSelector(

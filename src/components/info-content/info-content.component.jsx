@@ -19,7 +19,7 @@ function capital_letter(str)
 }
 
 const InfoContent = ({currentInfoItem, hemi}) => {
-	console.log(currentInfoItem.item)
+	//(currentInfoItem)
 	return(
 	<div className="item-info-content">
 		<div className="card">

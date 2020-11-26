@@ -5,11 +5,11 @@
   height: 300px;
   margin: 5px;
   padding: 5px;
-  background-color: #0AA17A;
+  background-color: var(--primary-norm);
   /* border-radius */
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   /* box-shadow */
   -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
   -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
@@ -54,10 +54,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 10px;
-  color: #067d9e;
+  color: var(--primary-darker);
 }
 .avail {
-  color: #8bfffb;
+  color: var(--text);
 }
 .item-price {
     display: flex;

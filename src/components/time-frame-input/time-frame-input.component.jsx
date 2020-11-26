@@ -11,6 +11,7 @@ const options = [
   'all year',
   'by month',
   'by hour',
+  'time range',
   'now'
 ]
 

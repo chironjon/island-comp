@@ -32,8 +32,8 @@ function capital_letter(str)
 //   ]
 // }
 
-const CollectionItem = ({item, type, timesAvailAllYear, currentItemCurrentMonthAvail, toggleInfoHidden, addItemInfo, listTime}) => {
-  //console.log(currentItemCurrentMonthAvail)
+const CollectionItem = ({item, type, time, timesAvailAllYear, currentItemCurrentMonthAvail, toggleInfoHidden, addItemInfo, listTime}) => {
+  //console.log(time, currentItemCurrentMonthAvail)
   return (
   <div className='collection-item' >
   

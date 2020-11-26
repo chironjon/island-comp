@@ -16,11 +16,19 @@ const INITIAL_STATE = {
   searchField: '',
   month: months[curMon],
   hour: hours[curTime],
+  secondHour: hours[15],
+  timeRange: [],
   hemi: 'NH',
   sortBy: '(pick)',
   order: 'desc'
 };
-
+const thingone = hours.indexOf(INITIAL_STATE.hour)
+console.log('thingone', thingone)
+// .slice(thingone, )
+const thingtwo = hours.indexOf(INITIAL_STATE.secondHour)
+console.log('thingtwo', thingtwo)
+const timeRange = hours.slice(thingone, thingtwo)
+console.log('timeRange', timeRange)
 const inputReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case InputActionTypes.HEMI_CHANGE:
@@ -42,6 +50,11 @@ const inputReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         hour: action.payload
+      }
+    case InputActionTypes.SECOND_TIME_CHANGE:
+      return {
+        ...state,
+        secondHour: action.payload
       }
     case InputActionTypes.MONTH_CHANGE:
       return {

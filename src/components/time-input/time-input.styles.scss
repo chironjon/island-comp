@@ -1,0 +1,24 @@
+.time-range-container {
+  display: grid;
+  grid-template-areas:
+            "month"
+            "second" 
+            "time";
+  
+  // border: 1px solid red;
+  // div {
+  //   border: 1px solid lightgreen;
+  // }
+  align-items: center;
+  justify-content: center;
+}
+.time-display {
+  grid-area: time;
+}
+.month-container {
+  grid-area: month;
+}
+.time-container {
+  grid-area: second;
+  
+}

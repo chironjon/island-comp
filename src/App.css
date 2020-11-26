@@ -2,16 +2,16 @@ body {
   font-family: 'Short Stack', cursive;
   padding: 5px 10px;
   text-align: center;
-  color: #8bfffb;
+  /* color: var(--secondary-two-dark); */
 }
 h1 {
   font-family: 'Delius Swash Caps', cursive;
   
 }
-a {
+/* a {
   text-decoration: none;
-  color: #8bfffb;
-}
+  color: rgba(218,243,251,1);
+} */
 * {
   box-sizing: border-box;
 }

@@ -17,8 +17,16 @@ export const changeTime = item => ({
   type: InputActionTypes.TIME_CHANGE,
   payload: item
 })
+export const changeSecondTime = item => ({
+  type: InputActionTypes.SECOND_TIME_CHANGE,
+  payload: item
+})
 export const changeMonth = item => ({
   type: InputActionTypes.MONTH_CHANGE,
+  payload: item
+})
+export const changeSecondMonth = item => ({
+  type: InputActionTypes.SECOND_MONTH_CHANGE,
   payload: item
 })
 export const changeSort = item => ({
